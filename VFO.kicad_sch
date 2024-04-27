@@ -907,12 +907,6 @@
 			)
 		)
 	)
-	(junction
-		(at 153.67 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47ee398f-88c8-4158-a1c0-86c622e037f5")
-	)
 	(wire
 		(pts
 			(xy 124.46 76.2) (xy 124.46 77.47)
@@ -922,16 +916,6 @@
 			(type default)
 		)
 		(uuid "0aa9fc98-fccf-4502-a7b2-95e5959b2c2e")
-	)
-	(wire
-		(pts
-			(xy 153.67 85.09) (xy 153.67 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12bb5be4-6b63-428e-80aa-a455f580aae8")
 	)
 	(wire
 		(pts
@@ -1015,7 +999,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 85.09) (xy 153.67 85.09)
+			(xy 152.4 85.09) (xy 154.94 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1066,6 +1050,18 @@
 			(justify right)
 		)
 		(uuid "3511235f-9a2f-4f80-bcdc-73c646916db4")
+	)
+	(hierarchical_label "tune out"
+		(shape output)
+		(at 154.94 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b2cae89-8833-4609-bb3c-be6c43c950da")
 	)
 	(hierarchical_label "wave out"
 		(shape output)
