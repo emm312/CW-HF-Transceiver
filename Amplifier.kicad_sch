@@ -1701,16 +1701,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 92.71) (xy 161.29 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22fd4827-9826-4c60-b3a4-b7f1d6381d8c")
-	)
-	(wire
-		(pts
 			(xy 134.62 91.44) (xy 134.62 93.98)
 		)
 		(stroke
@@ -1788,6 +1778,16 @@
 			(type default)
 		)
 		(uuid "4b201c02-dac9-4583-b2a6-8784dff90ffe")
+	)
+	(wire
+		(pts
+			(xy 161.29 92.71) (xy 161.29 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f722eb-ea1a-4ad2-9e1b-d44f694876d0")
 	)
 	(wire
 		(pts
@@ -2008,6 +2008,16 @@
 			(type default)
 		)
 		(uuid "d85017bb-a93c-48da-97eb-529e08bcef1a")
+	)
+	(text "TODO: Charge pump to increase power output"
+		(exclude_from_sim no)
+		(at 144.018 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1ddfc4b7-2172-4065-a93d-3089f2c80312")
 	)
 	(hierarchical_label "Tx"
 		(shape output)
