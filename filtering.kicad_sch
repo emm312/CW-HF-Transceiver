@@ -141,7 +141,7 @@
 				)
 			)
 		)
-		(symbol "Device:L"
+		(symbol "Device:L_Ferrite"
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
@@ -156,8 +156,8 @@
 					)
 				)
 			)
-			(property "Value" "L"
-				(at 1.905 0 90)
+			(property "Value" "L_Ferrite"
+				(at 2.794 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -182,7 +182,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Inductor"
+			(property "Description" "Inductor with ferrite core"
 				(at 0 0 0)
 				(effects
 					(font
@@ -209,7 +209,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "L_0_1"
+			(symbol "L_Ferrite_0_1"
 				(arc
 					(start 0 -2.54)
 					(mid 0.6323 -1.905)
@@ -226,6 +226,150 @@
 					(start 0 -1.27)
 					(mid 0.6323 -0.635)
 					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -2.794) (xy 1.016 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.778) (xy 1.016 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -0.762) (xy 1.016 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0.254) (xy 1.016 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 2.286) (xy 1.016 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -2.286) (xy 1.524 -2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.27) (xy 1.524 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -0.254) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.778) (xy 1.524 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.794) (xy 1.524 2.286)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -259,7 +403,7 @@
 					)
 				)
 			)
-			(symbol "L_1_1"
+			(symbol "L_Ferrite_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -298,12 +442,13 @@
 				)
 			)
 		)
-		(symbol "Relay:Relay_DPST-NO"
+		(symbol "Transistor_FET:DMN13H750S"
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "K"
-				(at 16.51 3.81 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -311,8 +456,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Relay_DPST-NO"
-				(at 16.51 1.27 0)
+			(property "Value" "DMN13H750S"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -320,8 +465,19 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 16.51 -1.27 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -330,7 +486,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -339,7 +495,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -348,7 +504,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Dual Pole Relay DPST NO"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -357,53 +513,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Relay?DPST*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Relay_DPST-NO_0_1"
-				(rectangle
-					(start -15.24 5.08)
-					(end 15.24 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -13.335 1.905)
-					(end -6.985 -1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "DMN13H750S_0_1"
 				(polyline
 					(pts
-						(xy -12.7 -1.905) (xy -7.62 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 -5.08) (xy -10.16 -1.905)
+						(xy 0.254 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -415,7 +528,55 @@
 				)
 				(polyline
 					(pts
-						(xy -10.16 5.08) (xy -10.16 1.905)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -427,91 +588,7 @@
 				)
 				(polyline
 					(pts
-						(xy -6.985 0) (xy -6.35 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.715 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.445 0) (xy -3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.175 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.905 3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -5.08)
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -523,103 +600,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.445 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.715 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.255 0) (xy 8.89 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.255 3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 10.16 -5.08)
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -631,7 +612,19 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 5.08) (xy 2.54 2.54) (xy 1.905 3.175) (xy 2.54 3.81)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -643,7 +636,7 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 5.08) (xy 12.7 2.54) (xy 12.065 3.175) (xy 12.7 3.81)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -651,21 +644,54 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
-			(symbol "Relay_DPST-NO_1_1"
-				(pin passive line
-					(at 0 -7.62 90)
+			(symbol "DMN13H750S_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "~"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "13"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -674,16 +700,16 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 7.62 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "~"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -692,70 +718,16 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -7.62 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "~"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -863,1414 +835,323 @@
 		)
 	)
 	(junction
-		(at 148.59 133.35)
+		(at 74.93 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "00376803-e152-48e8-a6cf-2f6f80cf7adf")
+		(uuid "0866e58a-a284-464c-9fd1-536b18984c48")
 	)
 	(junction
-		(at 29.21 113.03)
+		(at 39.37 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0071bd16-a833-4021-b604-fdfc27f45e5e")
+		(uuid "444b1351-19fa-4fab-900a-4df4c8bbf84f")
 	)
 	(junction
-		(at 110.49 101.6)
+		(at 50.8 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "02a184e5-a79c-457c-a92c-fbe251fd6160")
+		(uuid "64a787d5-4ea6-418c-9e0c-a8a5bd3cb0b6")
 	)
 	(junction
-		(at 74.93 101.6)
+		(at 74.93 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "10bde0d8-f17e-48ef-9d63-7cc1f3ec3ada")
+		(uuid "a8f0a17c-1141-47a8-9e67-f4767db1443c")
 	)
 	(junction
-		(at 217.17 101.6)
+		(at 100.33 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "11bda901-e470-4671-b2ec-bd81d520a5ee")
+		(uuid "bc54cfd7-10c1-4150-a027-98ac7c5ce2ff")
 	)
 	(junction
-		(at 265.43 135.89)
+		(at 50.8 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "15e7cedb-ad32-480a-8e01-c531c47bb6fc")
+		(uuid "fc80b85f-7d4a-42bc-9551-ac140c07a5d6")
 	)
-	(junction
-		(at 87.63 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2c4b92b2-75c4-43f9-9a81-e003660e6697")
-	)
-	(junction
-		(at 77.47 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2fa814ff-ac19-4d4b-b3cb-bb7031509e05")
-	)
-	(junction
-		(at 184.15 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38af8d27-88db-4a39-b01f-ebf22dfb8955")
-	)
-	(junction
-		(at 278.13 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39d7104c-c22b-4a8a-a1f5-8057ae60dd75")
-	)
-	(junction
-		(at 300.99 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c46e91a-ee3f-4659-9b60-cafd8410d438")
-	)
-	(junction
-		(at 181.61 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "55cadba0-e196-4160-8269-809b6b6fab67")
-	)
-	(junction
-		(at 252.73 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64abd225-f84a-4978-bb60-268188d81777")
-	)
-	(junction
-		(at 242.57 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65e17038-ac44-4dfa-af92-546745a178ae")
-	)
-	(junction
-		(at 207.01 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6dbbeb54-2d01-44dd-bb54-b3ae678ca5d4")
-	)
-	(junction
-		(at 146.05 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "709c21f5-790a-4463-9a8a-6674687341df")
-	)
-	(junction
-		(at 41.91 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ae97bc9-1fa7-4534-b9bf-992ed1aa4f82")
-	)
-	(junction
-		(at 219.71 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86b1cf9e-313f-4031-afb3-ff02dd1a157f")
-	)
-	(junction
-		(at 194.31 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9f99e541-bcea-4b2f-8936-6e3127175382")
-	)
-	(junction
-		(at 288.29 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a0b26d57-8cde-48ca-987a-10fb39216fe9")
-	)
-	(junction
-		(at 123.19 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ac3edc49-df0f-411c-ae97-6c26ecdfb465")
-	)
-	(junction
-		(at 135.89 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd321a09-6741-4496-8769-66242fa7b3a9")
-	)
-	(junction
-		(at 229.87 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce98b95e-825e-4169-99b3-ab22ae2741e1")
-	)
-	(junction
-		(at 64.77 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d41dd436-d0d1-4dd5-ac17-7dab43552e75")
-	)
-	(junction
-		(at 255.27 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5aa6f76-6644-42db-ac50-49b4a43b2afc")
-	)
-	(junction
-		(at 171.45 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e56f62c2-1203-4b80-a43c-3e8d0f61b9f5")
-	)
-	(junction
-		(at 113.03 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e8621206-c089-4f7e-9ae9-15d6cf20a7de")
-	)
-	(junction
-		(at 39.37 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3d85ad2-1f55-47de-a38e-c3ae133c3726")
-	)
-	(junction
-		(at 158.75 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f7e61930-683f-4e22-8be4-efe9199522ac")
-	)
-	(junction
-		(at 100.33 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa3a35d9-b433-447a-ab66-0cc2fb47271f")
-	)
-	(wire
-		(pts
-			(xy 300.99 135.89) (xy 303.53 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0025547a-5b4b-4415-9177-15e00b2009ae")
-	)
-	(wire
-		(pts
-			(xy 265.43 135.89) (xy 300.99 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "002bd3f0-208e-4232-a1f5-f9d397f612bd")
-	)
-	(wire
-		(pts
-			(xy 242.57 101.6) (xy 242.57 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01d285b1-7829-4168-99a6-1517700f56a9")
-	)
-	(wire
-		(pts
-			(xy 110.49 111.76) (xy 110.49 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02d9eb6e-5331-43bc-8b76-6f2ef4a6d5ad")
-	)
-	(wire
-		(pts
-			(xy 72.39 101.6) (xy 74.93 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03a61847-36c4-4d31-84d8-2d125ec5604e")
-	)
-	(wire
-		(pts
-			(xy 255.27 130.81) (xy 255.27 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04f72330-f1f6-4288-8900-6beca8327203")
-	)
-	(wire
-		(pts
-			(xy 19.05 118.11) (xy 19.05 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "134cb304-3327-42ae-8f6e-de94eb6fde21")
-	)
-	(wire
-		(pts
-			(xy 179.07 101.6) (xy 181.61 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1436a3d2-4c92-4c92-9c74-f1607e0a5aff")
-	)
-	(wire
-		(pts
-			(xy 191.77 101.6) (xy 191.77 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bbd14cf-4488-4ec3-81b0-db075487721e")
-	)
-	(wire
-		(pts
-			(xy 110.49 101.6) (xy 110.49 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f67ecb0-fb72-4b69-aa10-86867aa96239")
-	)
-	(wire
-		(pts
-			(xy 39.37 101.6) (xy 49.53 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2145b432-397d-4258-aa92-388c161e72b1")
-	)
-	(wire
-		(pts
-			(xy 181.61 101.6) (xy 191.77 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "217203f0-f189-4206-ab28-2394bf1e2ff9")
-	)
-	(wire
-		(pts
-			(xy 158.75 130.81) (xy 158.75 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22935a2e-32e2-4091-a2cf-d69303a1b1f5")
-	)
-	(wire
-		(pts
-			(xy 85.09 101.6) (xy 85.09 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2356ffc3-a2d8-4c5d-85a3-8d6f1c964205")
-	)
-	(wire
-		(pts
-			(xy 64.77 101.6) (xy 64.77 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "270e3a71-ce53-4440-b6e8-4a965b17d3b7")
-	)
-	(wire
-		(pts
-			(xy 52.07 135.89) (xy 87.63 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27ad8497-265d-4e40-8873-e2941753dd5f")
-	)
-	(wire
-		(pts
-			(xy 64.77 113.03) (xy 100.33 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "284d4137-d2c0-4541-ac41-dfe673512711")
-	)
-	(wire
-		(pts
-			(xy 19.05 113.03) (xy 29.21 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28964838-fff3-4a74-9e43-25b975164b0d")
-	)
-	(wire
-		(pts
-			(xy 184.15 130.81) (xy 184.15 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29bf64ed-1cc4-4621-ae9b-4bf644d84a42")
-	)
-	(wire
-		(pts
-			(xy 227.33 101.6) (xy 227.33 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b291af8-1057-40f1-abbb-21d292ce0c1c")
-	)
-	(wire
-		(pts
-			(xy 250.19 101.6) (xy 252.73 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b7b1588-e66b-4c76-b3e0-e6886e565d42")
-	)
-	(wire
-		(pts
-			(xy 36.83 168.91) (xy 39.37 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bf34bed-81f1-4655-8bf0-874dc4fdc22b")
-	)
-	(wire
-		(pts
-			(xy 36.83 101.6) (xy 39.37 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c7ca730-6357-4ee3-bf00-d0e784b5f11b")
-	)
-	(wire
-		(pts
-			(xy 285.75 101.6) (xy 288.29 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e7c15a3-6599-4923-9df3-948f6b976879")
-	)
-	(wire
-		(pts
-			(xy 36.83 163.83) (xy 39.37 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32f2bf69-bc2d-48cb-9a46-2b1f719f8e16")
-	)
-	(wire
-		(pts
-			(xy 255.27 133.35) (xy 290.83 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a2f57db-3e6d-4646-9c2d-cc61c289018d")
-	)
-	(wire
-		(pts
-			(xy 41.91 130.81) (xy 41.91 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c57f777-a7d1-420d-8d7c-5290d6292785")
-	)
-	(wire
-		(pts
-			(xy 135.89 113.03) (xy 135.89 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f382e0e-9fdd-433b-a23e-678b1927e2e5")
-	)
-	(wire
-		(pts
-			(xy 87.63 130.81) (xy 87.63 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4263f8ec-429f-4a7e-b457-38de1c7f08e9")
-	)
-	(wire
-		(pts
-			(xy 29.21 113.03) (xy 64.77 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4304719f-f317-4cf7-8be1-11ecfcddc36f")
-	)
-	(wire
-		(pts
-			(xy 214.63 101.6) (xy 217.17 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44ab7a6b-785a-45df-a6ff-8abb4afbf82b")
-	)
-	(wire
-		(pts
-			(xy 123.19 130.81) (xy 123.19 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45a21aca-f14c-4d84-80c3-60d416ba5026")
-	)
-	(wire
-		(pts
-			(xy 74.93 101.6) (xy 74.93 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "468251d3-6c25-4cf1-917b-09d2dbe8b7f6")
-	)
-	(wire
-		(pts
-			(xy 181.61 111.76) (xy 181.61 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "471e287f-afd5-4c4f-b2fc-64977e19bbe8")
-	)
-	(wire
-		(pts
-			(xy 171.45 113.03) (xy 171.45 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4873cd33-5e8b-469b-af56-6f87528d1e81")
-	)
-	(wire
-		(pts
-			(xy 171.45 101.6) (xy 171.45 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50364660-282c-49b2-b177-2b538e4f8717")
-	)
-	(wire
-		(pts
-			(xy 36.83 176.53) (xy 39.37 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5131fe5f-e851-4a36-91df-01618e21cb85")
-	)
-	(wire
-		(pts
-			(xy 64.77 113.03) (xy 64.77 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51b09e78-b4ba-4ecb-a47b-7497fc23bf7d")
-	)
-	(wire
-		(pts
-			(xy 300.99 135.89) (xy 300.99 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "547b9fa4-a68c-445c-a09e-454fd8e04e12")
-	)
-	(wire
-		(pts
-			(xy 52.07 130.81) (xy 52.07 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56a0f875-b172-4cfa-8008-0880a899d67e")
-	)
-	(wire
-		(pts
-			(xy 158.75 135.89) (xy 194.31 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "594a3f05-cacf-4d85-a35c-3f1a76d0d186")
-	)
-	(wire
-		(pts
-			(xy 107.95 101.6) (xy 110.49 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d32b91c-52a9-4bb0-84f1-5581455d23d0")
-	)
-	(wire
-		(pts
-			(xy 49.53 101.6) (xy 49.53 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "674eb869-9205-41bd-ad9f-72f9bc9422cd")
-	)
-	(wire
-		(pts
-			(xy 20.32 133.35) (xy 41.91 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67ace89e-df15-4d6d-86ed-63403d03ec39")
-	)
-	(wire
-		(pts
-			(xy 123.19 135.89) (xy 158.75 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a89bf75-2fcd-4a34-9f5c-daddb8426402")
-	)
-	(wire
-		(pts
-			(xy 100.33 113.03) (xy 135.89 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f0179e6-dbbd-460f-a398-2fcb9e695ae4")
-	)
-	(wire
-		(pts
-			(xy 242.57 113.03) (xy 242.57 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f5a37c7-b68f-4ef9-8a98-73bbb83a43ac")
-	)
-	(wire
-		(pts
-			(xy 146.05 101.6) (xy 156.21 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7327bc98-35f5-4a08-b231-248106803b8b")
-	)
-	(wire
-		(pts
-			(xy 29.21 113.03) (xy 29.21 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73a455e4-348c-427a-ac73-b143f277f5a6")
-	)
-	(wire
-		(pts
-			(xy 290.83 133.35) (xy 290.83 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76501495-323e-4188-a688-259866bff54e")
-	)
-	(wire
-		(pts
-			(xy 135.89 101.6) (xy 135.89 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7855e75f-ca9e-4c96-afd1-588df42b28e8")
-	)
-	(wire
-		(pts
-			(xy 229.87 135.89) (xy 265.43 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7861c519-82ba-48a7-b177-1a06ad357e79")
-	)
-	(wire
-		(pts
-			(xy 217.17 111.76) (xy 217.17 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "789dcbef-8d44-41e6-a85f-2a93adc808bb")
-	)
-	(wire
-		(pts
-			(xy 36.83 161.29) (xy 39.37 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79ee8317-03aa-419e-9b44-ef5932b33acb")
-	)
-	(wire
-		(pts
-			(xy 146.05 101.6) (xy 146.05 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d33b32e-abb7-404b-ab75-3712444d3a0e")
-	)
-	(wire
-		(pts
-			(xy 217.17 101.6) (xy 217.17 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "811ae887-482c-4eac-a807-8b2dc478a2f6")
-	)
-	(wire
-		(pts
-			(xy 184.15 133.35) (xy 219.71 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83171a87-ada7-4d4d-a0db-a561002adf8e")
-	)
-	(wire
-		(pts
-			(xy 207.01 101.6) (xy 207.01 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bd6d1e8-4627-494e-a0d9-fad8800ed1b4")
-	)
-	(wire
-		(pts
-			(xy 242.57 113.03) (xy 278.13 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bde1fda-d151-4056-a3fe-0c7ecb4c63ed")
-	)
-	(wire
-		(pts
-			(xy 113.03 133.35) (xy 148.59 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f9ec3a1-2bbd-4659-9744-0297fb5359c7")
-	)
-	(wire
-		(pts
-			(xy 87.63 135.89) (xy 123.19 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9358134d-8b04-4a4e-b95f-69b986a4375e")
-	)
-	(wire
-		(pts
-			(xy 148.59 133.35) (xy 184.15 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a8db4dd-3a33-4f28-b086-9cb9518d8d5b")
-	)
-	(wire
-		(pts
-			(xy 252.73 101.6) (xy 262.89 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aa81f74-1214-45db-8fdb-b4d5dd51bcdd")
-	)
-	(wire
-		(pts
-			(xy 100.33 113.03) (xy 100.33 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b5adffc-a55f-48bd-a078-693978907608")
-	)
-	(wire
-		(pts
-			(xy 171.45 113.03) (xy 207.01 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d38a9bd-544e-476c-a918-3b4e3e2728e2")
-	)
-	(wire
-		(pts
-			(xy 278.13 101.6) (xy 278.13 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a525c91b-5599-44e1-811e-3f13f69b7148")
-	)
-	(wire
-		(pts
-			(xy 278.13 113.03) (xy 278.13 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6e18117-e682-40d3-ba01-a3711dd9800c")
-	)
-	(wire
-		(pts
-			(xy 36.83 166.37) (xy 39.37 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a804a8aa-f8f1-47e7-a044-141b5f75ad38")
-	)
-	(wire
-		(pts
-			(xy 207.01 113.03) (xy 242.57 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b18472fb-6b89-4319-9ee9-d4df592d174c")
-	)
-	(wire
-		(pts
-			(xy 41.91 133.35) (xy 77.47 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3305bba-5f81-4bd6-a27f-9201a09f8ac4")
-	)
-	(wire
-		(pts
-			(xy 77.47 130.81) (xy 77.47 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b447d309-0dbc-4312-adf3-be0dc6fcc5bb")
-	)
-	(wire
-		(pts
-			(xy 39.37 111.76) (xy 39.37 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5586b56-579d-4ede-be02-62ad9721997f")
-	)
-	(wire
-		(pts
-			(xy 217.17 101.6) (xy 227.33 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5aaa5ca-cf4f-491b-8809-cc2358d4dacd")
-	)
-	(wire
-		(pts
-			(xy 100.33 101.6) (xy 100.33 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6f2753f-492f-4a60-a2fd-b3a8ec8e53c1")
-	)
-	(wire
-		(pts
-			(xy 36.83 171.45) (xy 39.37 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8c9266e-e9a8-46fc-86aa-684d77db31d5")
-	)
-	(wire
-		(pts
-			(xy 252.73 111.76) (xy 252.73 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0da6b9a-4a4f-4f58-97cd-151ec4140502")
-	)
-	(wire
-		(pts
-			(xy 36.83 173.99) (xy 39.37 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c233b9ba-33c3-4c48-85be-5f9c5a940299")
-	)
 	(wire
 		(pts
-			(xy 265.43 130.81) (xy 265.43 135.89)
+			(xy 55.88 140.97) (xy 63.5 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c27533cb-2acc-4b64-a65f-eec1c114cb94")
+		(uuid "01104128-0d05-407b-9243-4802eac72ba8")
 	)
 	(wire
 		(pts
-			(xy 194.31 130.81) (xy 194.31 135.89)
+			(xy 74.93 113.03) (xy 71.12 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3916bdf-ae2a-4af9-92ec-ed77c77f04ec")
+		(uuid "026cb9c5-bb7a-4900-8e26-469cc4de7519")
 	)
 	(wire
 		(pts
-			(xy 143.51 101.6) (xy 146.05 101.6)
+			(xy 39.37 127) (xy 39.37 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7586c8a-70d5-4389-8385-ce4e60488891")
+		(uuid "082fd69d-9b83-4bd4-abe2-8dda0eb84e92")
 	)
 	(wire
 		(pts
-			(xy 29.21 101.6) (xy 29.21 113.03)
+			(xy 100.33 128.27) (xy 100.33 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c87ad829-c089-409d-b043-5d417b1c97f1")
+		(uuid "0e5b66a8-4479-4ae5-b03d-2eaac868d21a")
 	)
 	(wire
 		(pts
-			(xy 77.47 133.35) (xy 113.03 133.35)
+			(xy 39.37 113.03) (xy 45.72 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c8993a67-ab49-461e-8da2-347bf6a56125")
+		(uuid "0f79d7fa-e5c3-4b85-9920-50228111cd25")
 	)
 	(wire
 		(pts
-			(xy 219.71 130.81) (xy 219.71 133.35)
+			(xy 91.44 105.41) (xy 91.44 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cf13fd29-b8c1-4274-b4f6-721b16f6c5b5")
+		(uuid "19bd9586-6941-4675-af88-a264bd75deaa")
 	)
 	(wire
 		(pts
-			(xy 74.93 101.6) (xy 85.09 101.6)
+			(xy 34.29 127) (xy 39.37 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cfe3e5f4-1b3a-4de1-81a3-3c80e3d868af")
+		(uuid "2a11738e-b3eb-4b14-8503-06113ca33ae5")
 	)
 	(wire
 		(pts
-			(xy 288.29 111.76) (xy 288.29 115.57)
+			(xy 50.8 132.08) (xy 91.44 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3faef64-233e-45ca-b016-f1078290c962")
+		(uuid "2f3c552a-37ef-45ba-8c6f-016bb4d68785")
 	)
 	(wire
 		(pts
-			(xy 120.65 101.6) (xy 120.65 115.57)
+			(xy 55.88 113.03) (xy 63.5 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d60dd0e4-cd48-4507-aab7-e0368610a27c")
+		(uuid "2f67eee9-6e56-4908-b0a8-ee976e037b7b")
 	)
 	(wire
 		(pts
-			(xy 148.59 130.81) (xy 148.59 133.35)
+			(xy 74.93 113.03) (xy 86.36 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dbb03959-c246-4bbe-b15a-35bb5345a0ec")
+		(uuid "2fee7c1a-611d-43ea-8cbd-747c7a3b6f45")
 	)
 	(wire
 		(pts
-			(xy 194.31 135.89) (xy 229.87 135.89)
+			(xy 100.33 113.03) (xy 96.52 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dc456429-6207-4ff0-84f2-96b1d19ee042")
+		(uuid "32103413-2822-48d5-abab-d1649710a951")
 	)
 	(wire
 		(pts
-			(xy 146.05 111.76) (xy 146.05 115.57)
+			(xy 39.37 113.03) (xy 39.37 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dee76010-0f91-410a-a9cf-e792110c0d2c")
+		(uuid "4467d4d0-88ca-4ec2-86ce-51c51c2c4bce")
 	)
 	(wire
 		(pts
-			(xy 113.03 130.81) (xy 113.03 133.35)
+			(xy 50.8 102.87) (xy 50.8 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e11703b1-a91d-4e92-b030-51e54f197433")
+		(uuid "44c4003d-1f0b-4ed0-9e32-3ccc2eb7a6cc")
 	)
 	(wire
 		(pts
-			(xy 288.29 101.6) (xy 298.45 101.6)
+			(xy 96.52 140.97) (xy 100.33 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e12ee817-959a-4569-a600-33f2035f0cb0")
+		(uuid "4b6b4bc6-80c2-4094-be44-89ac69852021")
 	)
 	(wire
 		(pts
-			(xy 298.45 101.6) (xy 298.45 115.57)
+			(xy 74.93 115.57) (xy 74.93 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e29821c7-da0e-4ab1-b1b4-19eab70ecb48")
+		(uuid "54d240d7-330d-46a6-aa38-7d73190216ad")
 	)
 	(wire
 		(pts
-			(xy 252.73 101.6) (xy 252.73 104.14)
+			(xy 50.8 132.08) (xy 50.8 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e72d9dab-7629-456e-887a-5b102b490735")
+		(uuid "593eeb74-a564-401c-b52a-b730e1b81278")
 	)
 	(wire
 		(pts
-			(xy 288.29 101.6) (xy 288.29 104.14)
+			(xy 74.93 143.51) (xy 74.93 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9c9bb5e-4c97-47ed-9029-a329ee565dcc")
+		(uuid "65511e44-1e06-4318-8e37-e2ab3484250c")
 	)
 	(wire
 		(pts
-			(xy 135.89 113.03) (xy 171.45 113.03)
+			(xy 34.29 132.08) (xy 50.8 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef804461-edd2-4272-b0a0-4d1eb6b23429")
+		(uuid "77469461-7386-4d18-96d3-790b16128a42")
 	)
 	(wire
 		(pts
-			(xy 156.21 101.6) (xy 156.21 115.57)
+			(xy 100.33 128.27) (xy 104.14 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0ea231b-6f5b-49fa-8a0a-669d075db509")
+		(uuid "97345b90-1a84-4998-809b-3277471a8587")
 	)
 	(wire
 		(pts
-			(xy 262.89 101.6) (xy 262.89 115.57)
+			(xy 34.29 102.87) (xy 50.8 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1786a3f-6093-4057-93c2-cea48dbe410b")
+		(uuid "9a2a8be6-0818-4474-8944-716965241cce")
 	)
 	(wire
 		(pts
-			(xy 229.87 130.81) (xy 229.87 135.89)
+			(xy 100.33 140.97) (xy 100.33 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4dacda7-176d-4001-b5ae-787956c30881")
+		(uuid "9e1deb9a-e204-4cdf-88ec-e05e588fa79f")
 	)
 	(wire
 		(pts
-			(xy 219.71 133.35) (xy 255.27 133.35)
+			(xy 91.44 132.08) (xy 91.44 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f66870c5-cf10-43b6-8423-dde5192cd37f")
+		(uuid "b1541af6-1665-456d-80dc-3714565c80ea")
 	)
 	(wire
 		(pts
-			(xy 207.01 113.03) (xy 207.01 115.57)
+			(xy 74.93 140.97) (xy 86.36 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f6a4c9d7-91e6-40b2-859e-395d0b630faa")
+		(uuid "c98f604e-23e2-4c38-b733-327e939a5a84")
 	)
 	(wire
 		(pts
-			(xy 36.83 179.07) (xy 39.37 179.07)
+			(xy 74.93 140.97) (xy 71.12 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f6cd4d76-2edb-4161-a622-f3c868a3e8ac")
+		(uuid "d0bb2b47-16e7-402b-b3aa-be6443fcdaf0")
 	)
 	(wire
 		(pts
-			(xy 110.49 101.6) (xy 120.65 101.6)
+			(xy 45.72 140.97) (xy 39.37 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fba9a370-6cf2-49f5-ae1d-542130a88d40")
+		(uuid "d5ecbc58-ced6-4684-9c73-0638637b8ce8")
 	)
 	(wire
 		(pts
-			(xy 39.37 101.6) (xy 39.37 104.14)
+			(xy 50.8 102.87) (xy 91.44 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc11fd09-c777-4550-8ab7-c6421f41f64d")
+		(uuid "f484bb14-c23d-4f7b-872e-d89394212e7c")
 	)
-	(wire
-		(pts
-			(xy 181.61 101.6) (xy 181.61 104.14)
-		)
+	(text_box "Filter 1: 80m, 60m, 40m - cuttoff 8MHz\nFilter 2: 30m+ - cuttoff 30M"
+		(exclude_from_sim no)
+		(at 45.466 90.17 0)
+		(size 42.672 5.842)
 		(stroke
 			(width 0)
 			(type default)
-		)
-		(uuid "ffccc5df-4074-4ed4-bbf4-477695fbd28c")
-	)
-	(wire
-		(pts
-			(xy 74.93 111.76) (xy 74.93 115.57)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(fill
+			(type none)
 		)
-		(uuid "ffd9964c-2723-4754-b415-cb915bab78ca")
-	)
-	(label "40m band en"
-		(at 64.77 130.81 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left top)
 		)
-		(uuid "26350d06-a29d-4e08-b9d9-d5d2c1fa51d1")
+		(uuid "5892b99f-5554-401d-be8b-0a46c52fd3b9")
 	)
-	(label "12m band en"
-		(at 39.37 176.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "28061ddb-8540-4794-a6eb-b7f5857de67e")
-	)
-	(label "17m band en"
-		(at 171.45 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "281a38b5-05b9-4caa-9671-3976074d3bca")
-	)
-	(label "20m band en"
-		(at 135.89 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3b53fd42-1071-4efa-a5ec-69119acb78bf")
-	)
-	(label "80m band en"
-		(at 39.37 161.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "54335cce-1e2b-47fe-bde8-210984a18917")
-	)
-	(label "20m band en"
-		(at 39.37 168.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "66dca431-d1ce-4da2-b0ab-c998cb93fb37")
-	)
-	(label "15m band en"
-		(at 39.37 173.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9c32110a-796e-4a48-9c7e-a7777f48ed01")
-	)
-	(label "80m band en"
-		(at 29.21 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9ff1cc24-ebd9-4249-bcec-7ebd84b19b13")
-	)
-	(label "12m band en"
-		(at 242.57 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a96300d9-f873-4edc-b345-197b33093990")
-	)
-	(label "30m band en"
-		(at 39.37 166.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac8f8b94-626e-4738-b579-8b76e9e5a4cd")
-	)
-	(label "30m band en"
-		(at 100.33 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b41ba8ef-8627-42b9-ba7b-96e2fb9b8286")
-	)
-	(label "10m band en"
-		(at 39.37 179.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be471168-a105-41f9-89d5-df2f47d02e3c")
-	)
-	(label "40m band en"
-		(at 39.37 163.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c03e4c23-a7eb-4ace-997f-771774e2590a")
-	)
-	(label "17m band en"
-		(at 39.37 171.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "edc84934-fe25-4419-8b3a-cecb2d81f96a")
-	)
-	(label "15m band en"
-		(at 207.01 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f1ef9147-ad0c-4861-ace9-d33cd554cf01")
-	)
-	(label "10m band en"
-		(at 278.13 130.81 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f5dcb091-d12b-483e-9273-8b5d7a842685")
-	)
-	(hierarchical_label "17m band en"
-		(shape output)
-		(at 36.83 171.45 180)
+	(hierarchical_label "Filter 1 En"
+		(shape input)
+		(at 34.29 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2278,23 +1159,11 @@
 			)
 			(justify right)
 		)
-		(uuid "07142e39-ef11-40ca-a844-6c8001aaa57a")
-	)
-	(hierarchical_label "20m band en"
-		(shape output)
-		(at 36.83 168.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2b135655-5aaa-4485-8db6-16cb8ae773db")
+		(uuid "2a845bb8-17ca-4afd-80f5-c8a85ad11075")
 	)
 	(hierarchical_label "wave"
 		(shape input)
-		(at 20.32 133.35 180)
+		(at 34.29 127 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2304,33 +1173,9 @@
 		)
 		(uuid "74bd9d77-fb0b-461d-bf3f-b32ad4c01595")
 	)
-	(hierarchical_label "40m band en"
-		(shape output)
-		(at 36.83 163.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7e0c3077-5667-4d79-9346-6badfb5e1ed1")
-	)
-	(hierarchical_label "12m band en"
-		(shape output)
-		(at 36.83 176.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "af255d69-8e94-42b4-a24a-2674282c44c4")
-	)
 	(hierarchical_label "filtered wave"
 		(shape input)
-		(at 303.53 135.89 0)
+		(at 104.14 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2340,9 +1185,9 @@
 		)
 		(uuid "b578b2cc-ee6b-488f-871f-e0775691678b")
 	)
-	(hierarchical_label "15m band en"
-		(shape output)
-		(at 36.83 173.99 180)
+	(hierarchical_label "Filter 2 En"
+		(shape input)
+		(at 34.29 132.08 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2350,72 +1195,112 @@
 			)
 			(justify right)
 		)
-		(uuid "c272ac88-fd6e-4b83-b2a9-3b355d230ffc")
-	)
-	(hierarchical_label "80m band en"
-		(shape output)
-		(at 36.83 161.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c9b63a91-cc7d-4d50-a92b-9c6a1e08523d")
-	)
-	(hierarchical_label "30m band en"
-		(shape output)
-		(at 36.83 166.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dc6cae49-66d3-4e0b-b9aa-d3a5eb6f9d3c")
-	)
-	(hierarchical_label "10m band en"
-		(shape output)
-		(at 36.83 179.07 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e0e94cd2-9808-4144-8f7e-19388345b0f9")
+		(uuid "bc57f725-3c91-446e-bab1-43172dbd18c7")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 281.94 101.6 90)
+		(lib_id "Transistor_FET:DMN13H750S")
+		(at 50.8 110.49 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "13f6b503-38ff-4c7d-b633-caa87d9f3f3f")
-		(property "Reference" "C14"
-			(at 281.94 93.98 90)
+		(uuid "2d2be09b-6fd2-45ae-a602-f7c1af959e14")
+		(property "Reference" "Q4"
+			(at 50.8 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Value" "DMN13H750S"
+			(at 50.8 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 48.895 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
+			(at 46.99 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
+			(at 50.8 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c41eafe7-c328-4acc-a42e-ca91dd93d7e9")
+		)
+		(pin "2"
+			(uuid "96e1c2ab-7966-4f9b-b8b5-96aa1a45a080")
+		)
+		(pin "1"
+			(uuid "0369c07c-014c-48b6-91d2-539da0e2f585")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 74.93 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b7bbc99-24d9-4c07-8e6a-1cfbb1678961")
+		(property "Reference" "C6"
+			(at 78.74 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(property "Value" "1p"
-			(at 281.94 96.52 90)
+			(at 78.74 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 285.75 100.6348 0)
+		(property "Footprint" ""
+			(at 75.8952 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2424,7 +1309,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 101.6 0)
+			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +1318,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 281.94 101.6 0)
+			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2441,110 +1326,41 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "030701ea-e16d-4dfd-b952-fcaef6c7b51c")
-		)
 		(pin "1"
-			(uuid "e1228603-fe9a-45de-b627-959971e038f0")
+			(uuid "8c747adb-b39d-44fa-93c4-350c56f68cef")
+		)
+		(pin "2"
+			(uuid "6cf1fabf-beb6-428a-b525-08ce161ba188")
 		)
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C14")
+					(reference "C6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 246.38 101.6 90)
+		(lib_id "Device:L_Ferrite")
+		(at 67.31 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2778fc68-0d92-42a5-af8c-89f250523c81")
-		(property "Reference" "C13"
-			(at 246.38 93.98 90)
+		(uuid "62d592f0-9aa9-482c-9454-8b463be2cad1")
+		(property "Reference" "L1"
+			(at 67.31 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1p"
-			(at 246.38 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 250.19 100.6348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 246.38 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5a026a4c-b80b-496f-827e-908db5a642ed")
-		)
-		(pin "1"
-			(uuid "212d0fd7-cc84-44ca-9582-fc22241604ff")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 19.05 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e52ff89-2ede-404d-9703-a5d801ede2d8")
-		(property "Reference" "#PWR025"
-			(at 19.05 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 19.05 123.19 0)
+		(property "Value" "396u"
+			(at 67.31 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2552,72 +1368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 19.05 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2d41f23-c21f-43b9-9cf3-b0cc7503ede0")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 175.26 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37f1f4c6-aba5-463f-b371-71ca046dd578")
-		(property "Reference" "C11"
-			(at 175.26 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1p"
-			(at 175.26 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 179.07 100.6348 0)
+			(at 67.31 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2626,7 +1377,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 101.6 0)
+			(at 67.31 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2634,762 +1385,23 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 175.26 101.6 0)
+		(property "Description" "Inductor with ferrite core"
+			(at 67.31 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "c68658eb-8792-4468-b475-b330396bb14a")
 		)
 		(pin "2"
-			(uuid "3e58593e-bd2d-4f2c-98dd-d4729b01e5e8")
-		)
-		(pin "1"
-			(uuid "084fb20e-fb44-4968-abfb-50029cc53297")
+			(uuid "b2dc4864-21ac-4cc5-8a19-849cb4919022")
 		)
 		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 68.58 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3acd8d71-0fae-4bf6-896b-fc229265318f")
-		(property "Reference" "C8"
-			(at 68.58 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1p"
-			(at 68.58 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 72.39 100.6348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 68.58 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "317e6861-fb4c-4daa-9707-caaefd73718f")
-		)
-		(pin "1"
-			(uuid "a49a48ee-255b-4868-884f-918a70971902")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 288.29 123.19 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41409cbb-e4b7-430f-8f5e-bfedbb2ea610")
-		(property "Reference" "K8"
-			(at 304.8 124.4601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Relay_DPST-NO"
-			(at 304.8 121.9201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 304.8 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 288.29 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 288.29 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "23"
-			(uuid "75117350-e276-4c33-beee-c58fa69a8a7e")
-		)
-		(pin "14"
-			(uuid "e70983ca-41e0-4300-b249-5456e8870e13")
-		)
-		(pin "A2"
-			(uuid "da816578-be4d-4110-88db-811c7907421b")
-		)
-		(pin "13"
-			(uuid "c9d17ed1-9a95-44c9-82b1-43e8cdf17023")
-		)
-		(pin "A1"
-			(uuid "0b30e62b-31e8-4533-a411-098261d2125c")
-		)
-		(pin "24"
-			(uuid "42e69d83-4370-4ffd-baa4-c2f393b7f4d4")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 110.49 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41580d92-6178-434b-8040-116a149b5b58")
-		(property "Reference" "L3"
-			(at 111.76 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "230u"
-			(at 111.76 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 110.49 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 110.49 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "771d8d96-7477-4369-8d66-45ee793a6809")
-		)
-		(pin "2"
-			(uuid "ad7645b4-bae0-4604-a23b-4c04a1a6e08a")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 210.82 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "526fd2e4-1e56-494e-800d-d56cd2c8027b")
-		(property "Reference" "C12"
-			(at 210.82 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1p"
-			(at 210.82 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 214.63 100.6348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f917d170-aacf-4111-b4d3-f755a96fd828")
-		)
-		(pin "1"
-			(uuid "4e854457-26a9-4bd7-aa36-a5048b51194d")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 39.37 123.19 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "579ea8c3-62ec-40fa-976f-cc54fd47b0d1")
-		(property "Reference" "K1"
-			(at 55.88 124.4601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Relay_DPST-NO"
-			(at 55.88 121.9201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 55.88 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 39.37 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "23"
-			(uuid "dc5141e9-41c3-4a44-a262-22426729d6f6")
-		)
-		(pin "14"
-			(uuid "41c3915d-b783-42a7-9558-ae277be51372")
-		)
-		(pin "A2"
-			(uuid "67592f32-61bd-4e0d-8ed3-00817416f1bc")
-		)
-		(pin "13"
-			(uuid "2ccfbd3e-d5a2-45ab-8565-a3b7ccb79afa")
-		)
-		(pin "A1"
-			(uuid "66e68554-1fa2-474d-a2dc-25926e3505c8")
-		)
-		(pin "24"
-			(uuid "e13de076-e19b-4527-9c88-8791d18bce56")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 146.05 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f1c2a18-566e-4416-90e5-b5462dc268d0")
-		(property "Reference" "L4"
-			(at 147.32 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "120u"
-			(at 147.32 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 146.05 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 146.05 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b165329-01cc-4fa3-b73d-df2ad2dda5bf")
-		)
-		(pin "2"
-			(uuid "0eae1983-85db-41ef-a027-196f4b7d2e78")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 288.29 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60a32c2c-fa61-496d-be2f-c5f19a07a7a1")
-		(property "Reference" "L8"
-			(at 289.56 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "28u"
-			(at 289.56 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 288.29 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 288.29 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 288.29 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68f17f28-b2bc-4f3c-b193-8e6abc728581")
-		)
-		(pin "2"
-			(uuid "b8951cc2-c922-4361-85c0-fb36cf5c7c61")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 33.02 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b065603-b48c-4260-82db-b9de60471e61")
-		(property "Reference" "C7"
-			(at 33.02 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1n"
-			(at 33.02 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 36.83 100.6348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 33.02 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "caa1031e-8c49-4e3d-8889-30f5e3a34c07")
-		)
-		(pin "1"
-			(uuid "50a68a15-d373-416d-beb7-84db0e459eb1")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 110.49 123.19 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d8465ea-a835-4341-91aa-00319c252622")
-		(property "Reference" "K3"
-			(at 127 124.4601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Relay_DPST-NO"
-			(at 127 121.9201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 127 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "23"
-			(uuid "60fbaf3f-566b-4342-86f3-0fbc94b30928")
-		)
-		(pin "14"
-			(uuid "017cc624-2fac-44eb-8878-c5e008943c61")
-		)
-		(pin "A2"
-			(uuid "d2369787-c3b3-43ec-98d7-b4d065310b0a")
-		)
-		(pin "13"
-			(uuid "09dc84a2-1d48-4d2f-a3a8-ef151ccc8c55")
-		)
-		(pin "A1"
-			(uuid "d2dd4b1c-2525-4461-a4fd-19dd52dc6fa1")
-		)
-		(pin "24"
-			(uuid "c8ed2d39-5d53-4a1c-a765-bc3005d8bfff")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 39.37 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80bc9a34-b32e-4e35-bd25-6cb636c881aa")
-		(property "Reference" "L1"
-			(at 40.64 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2u"
-			(at 40.64 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 39.37 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 39.37 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a0c38f2-2369-48a4-9da7-dbe0d486800e")
-		)
-		(pin "2"
-			(uuid "6fc41fa9-bf2d-4b11-8609-f7d8ff2a5605")
-		)
-		(instances
-			(project "CW HF Transceiver"
+			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
 					(reference "L1")
 					(unit 1)
@@ -3398,35 +1410,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 252.73 107.95 0)
+		(lib_id "power:GND")
+		(at 74.93 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "868df34c-b57a-4d35-9f1d-e2771fae8a9c")
-		(property "Reference" "L7"
-			(at 254 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "45u"
-			(at 254 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 252.73 107.95 0)
+		(uuid "665eea5f-f0f7-469c-b801-74f76c5970e6")
+		(property "Reference" "#PWR021"
+			(at 74.93 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3434,8 +1428,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 252.73 107.95 0)
+		(property "Value" "GND"
+			(at 74.93 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3443,8 +1445,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 252.73 107.95 0)
+		(property "Datasheet" ""
+			(at 74.93 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 74.93 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,62 +1464,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "376b84b6-87c1-44a6-8a22-fa5abb76c906")
-		)
-		(pin "2"
-			(uuid "1f9c20b4-8c5f-452d-a3a2-03d04bf68086")
+			(uuid "9766a878-a228-47a6-8816-869bb60650ec")
 		)
 		(instances
-			(project "CW HF Transceiver"
+			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L7")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 146.05 123.19 0)
-		(mirror x)
+		(lib_id "power:GND")
+		(at 74.93 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a2951972-9bcb-4fb4-8ddc-21932e79cdb4")
-		(property "Reference" "K4"
-			(at 162.56 124.4601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Relay_DPST-NO"
-			(at 162.56 121.9201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 162.56 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 123.19 0)
+		(uuid "6d62bb8c-546e-4dd9-84eb-914640badb87")
+		(property "Reference" "#PWR022"
+			(at 74.93 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3516,8 +1494,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 146.05 123.19 0)
+		(property "Value" "GND"
+			(at 74.93 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3525,63 +1511,8 @@
 				(hide yes)
 			)
 		)
-		(pin "23"
-			(uuid "04cdd690-2414-463d-9e12-2d87bbdc1016")
-		)
-		(pin "14"
-			(uuid "fc44bee2-ddfb-4011-b4c4-251a0aaca90a")
-		)
-		(pin "A2"
-			(uuid "4dea7474-2c31-403a-9d9a-ca541460710e")
-		)
-		(pin "13"
-			(uuid "dbe41d04-7e0e-41b7-8ebd-10c8367f8a64")
-		)
-		(pin "A1"
-			(uuid "cb2f1c6c-4624-411c-8c3c-dc12d0b96210")
-		)
-		(pin "24"
-			(uuid "66905e41-e76d-4c90-aaac-5425a592e6ca")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 217.17 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa6f704f-ec1c-4718-ae7d-755bd80cba04")
-		(property "Reference" "L6"
-			(at 218.44 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "55u"
-			(at 218.44 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 217.17 107.95 0)
+		(property "Datasheet" ""
+			(at 74.93 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3589,17 +1520,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 217.17 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 217.17 107.95 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 74.93 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3608,62 +1530,66 @@
 			)
 		)
 		(pin "1"
-			(uuid "25e8eb97-3907-4633-a547-7e927b2aa114")
-		)
-		(pin "2"
-			(uuid "fbf7f404-7a1f-4d1b-9c04-c9367c4817c2")
+			(uuid "52a34cdf-b123-4349-a544-09a95cbc7f82")
 		)
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L6")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 252.73 123.19 0)
-		(mirror x)
+		(lib_id "Transistor_FET:DMN13H750S")
+		(at 91.44 110.49 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "af516499-3621-4ea7-a419-97845c67265b")
-		(property "Reference" "K7"
-			(at 269.24 124.4601 0)
+		(uuid "7e53eeec-426a-4696-b546-748e75a66f01")
+		(property "Reference" "Q6"
+			(at 91.44 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Relay_DPST-NO"
-			(at 269.24 121.9201 0)
+		(property "Value" "DMN13H750S"
+			(at 91.44 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 269.24 121.92 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 89.535 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 252.73 123.19 0)
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
+			(at 87.63 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
+			(at 91.44 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3671,138 +1597,73 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 252.73 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "23"
-			(uuid "2da13d76-33db-41d1-bc28-a103d74c247a")
-		)
-		(pin "14"
-			(uuid "cb2dd68e-4b6c-4b59-ba2c-11376e8b7a5a")
-		)
-		(pin "A2"
-			(uuid "82447602-c1fc-472e-afa4-4bed5b783fd3")
-		)
-		(pin "13"
-			(uuid "52d52fff-14a7-40b1-a29b-6fed962076d2")
-		)
-		(pin "A1"
-			(uuid "edc9b0ff-2b90-434e-952f-08d4811f09a7")
-		)
-		(pin "24"
-			(uuid "2c1e7e37-5aea-459d-b9ad-329aab6722a2")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 104.14 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc2e2f65-fceb-4fce-a5b1-d9dc5fe2cc39")
-		(property "Reference" "C9"
-			(at 104.14 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1p"
-			(at 104.14 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 107.95 100.6348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 104.14 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "bf1c7d7b-4f45-4bf9-bc77-ff2f42b0a754")
 		)
 		(pin "2"
-			(uuid "288af5ed-864e-43ee-9d53-889573b63dde")
+			(uuid "6ecf72bc-0051-4823-ae93-47b9fabc07c4")
 		)
 		(pin "1"
-			(uuid "8b9a635b-1952-4599-9a11-2dde6463f16f")
+			(uuid "582a4ab3-2a5a-4441-b758-dfea8be5f7f5")
 		)
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C9")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 139.7 101.6 90)
+		(lib_id "Transistor_FET:DMN13H750S")
+		(at 91.44 138.43 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cc9f9157-58bb-41e2-8ae7-7954d7e2b781")
-		(property "Reference" "C10"
-			(at 139.7 93.98 90)
+		(uuid "96f64ee1-f0ed-4cb3-9d6b-02b1eca07316")
+		(property "Reference" "Q7"
+			(at 91.44 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1p"
-			(at 139.7 96.52 90)
+		(property "Value" "DMN13H750S"
+			(at 91.44 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 143.51 100.6348 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 89.535 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
+			(at 87.63 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
+			(at 91.44 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3810,224 +1671,52 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 139.7 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "9392e351-85f2-4909-b664-d5515d03ecdd")
 		)
 		(pin "2"
-			(uuid "255aad36-fae3-4d18-960f-19a8088813ba")
+			(uuid "3651166a-7202-445c-b63c-6cdf8f67a79d")
 		)
 		(pin "1"
-			(uuid "9b2d83d3-b69d-4523-b013-25ba39d9be7f")
+			(uuid "3080c00b-611f-4028-a594-df3a7ee05dbf")
 		)
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C10")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 181.61 123.19 0)
-		(mirror x)
+		(lib_id "Device:L_Ferrite")
+		(at 67.31 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d4145c92-5aac-423a-8785-0c6cf62e8623")
-		(property "Reference" "K5"
-			(at 198.12 124.4601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Relay_DPST-NO"
-			(at 198.12 121.9201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 198.12 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 181.61 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "23"
-			(uuid "6a36dd3b-4ba8-420a-9719-1e5639c5e772")
-		)
-		(pin "14"
-			(uuid "734c5e06-3e25-406b-9438-681601a0e3f6")
-		)
-		(pin "A2"
-			(uuid "bd4b7bd8-118f-4039-a5f0-479d0e1a051a")
-		)
-		(pin "13"
-			(uuid "f9a36ac5-ad60-43de-b37b-94448a909c23")
-		)
-		(pin "A1"
-			(uuid "c7a7edc5-419f-448e-ad98-d158fdd91dfc")
-		)
-		(pin "24"
-			(uuid "0fa5b558-2fa5-404c-bbdf-aa0e3b916f1c")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 181.61 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de882a82-ad90-40e7-a3dd-82c29d141ee0")
-		(property "Reference" "L5"
-			(at 182.88 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74u"
-			(at 182.88 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 181.61 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 181.61 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "900eeb84-7b9f-41ee-afc9-266ad42ddbbb")
-		)
-		(pin "2"
-			(uuid "531cbe5b-e407-440b-8b26-f01786315d11")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 74.93 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e71effa8-17be-414d-b719-313e273b1c37")
+		(uuid "b41c930f-24fd-4ee4-b9bf-56db8c1c5dd9")
 		(property "Reference" "L2"
-			(at 76.2 106.6799 0)
+			(at 67.31 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "450u"
-			(at 76.2 109.2199 0)
+		(property "Value" "28.1u"
+			(at 67.31 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
-			(at 74.93 107.95 0)
+		(property "Footprint" ""
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4036,7 +1725,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 107.95 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4044,8 +1733,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 74.93 107.95 0)
+		(property "Description" "Inductor with ferrite core"
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4054,10 +1743,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "18d200eb-329f-4e3c-ab4f-63c6327238ac")
+			(uuid "b7fdadc4-f3f8-4fa5-8051-0165886624bb")
 		)
 		(pin "2"
-			(uuid "7b560dcd-93e4-4d09-931b-b20106db020c")
+			(uuid "3f4dd360-4e1e-49ea-8586-114e54a88c46")
 		)
 		(instances
 			(project "CW HF Transceiver"
@@ -4069,47 +1758,54 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 217.17 123.19 0)
-		(mirror x)
+		(lib_id "Transistor_FET:DMN13H750S")
+		(at 50.8 138.43 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e9ce443f-4869-4feb-b6d4-499c905ee64c")
-		(property "Reference" "K6"
-			(at 233.68 124.4601 0)
+		(uuid "c78f00eb-1b3b-4273-bf94-17d781f380d1")
+		(property "Reference" "Q5"
+			(at 50.8 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DMN13H750S"
+			(at 50.8 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 48.895 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
+			(at 46.99 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Value" "Relay_DPST-NO"
-			(at 233.68 121.9201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 233.68 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 217.17 123.19 0)
+		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
+			(at 50.8 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4117,55 +1813,36 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 217.17 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "274363e3-1eed-429d-9046-b3d69b682f66")
 		)
-		(pin "23"
-			(uuid "94a15c5d-0b17-46a9-be92-63d357350b4f")
+		(pin "2"
+			(uuid "87678feb-1d14-43ca-a368-f2bb5bb970b1")
 		)
-		(pin "14"
-			(uuid "9ff8057c-50cc-4a67-ba12-f4859c8e8d4a")
-		)
-		(pin "A2"
-			(uuid "9441dd1a-d386-4029-8efb-2418ac4e15a3")
-		)
-		(pin "13"
-			(uuid "6896da8f-20c5-4ff4-b8af-7db57424e0c8")
-		)
-		(pin "A1"
-			(uuid "26145cfe-1f70-4c65-8fe7-ace817a8dd09")
-		)
-		(pin "24"
-			(uuid "5c46c837-61aa-41a9-b836-c9dd19073390")
+		(pin "1"
+			(uuid "f6a73baf-40f3-4af7-bd5c-2e9ccc4f5dd8")
 		)
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K6")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_DPST-NO")
-		(at 74.93 123.19 0)
-		(mirror x)
+		(lib_id "Device:C")
+		(at 74.93 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fe14a8d5-3d75-4c0b-810a-06ad566bb508")
-		(property "Reference" "K2"
-			(at 91.44 124.4601 0)
+		(uuid "fd52899e-994b-4214-969b-c167b0e3d72c")
+		(property "Reference" "C5"
+			(at 78.74 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4173,28 +1850,26 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Relay_DPST-NO"
-			(at 91.44 121.9201 0)
+		(property "Value" "1p"
+			(at 78.74 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"
-			(at 91.44 121.92 0)
+		(property "Footprint" ""
+			(at 75.8952 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 123.19 0)
+			(at 74.93 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4202,8 +1877,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Monostable Relay DPST, Normally Open, EN50005"
-			(at 74.93 123.19 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 74.93 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4211,28 +1886,16 @@
 				(hide yes)
 			)
 		)
-		(pin "23"
-			(uuid "283a02aa-c817-4467-a459-f628c5086195")
+		(pin "1"
+			(uuid "65dae918-9712-4514-bcb1-af82a7fdfccf")
 		)
-		(pin "14"
-			(uuid "aab0b639-766f-4dd0-9f07-7b94799ec0e1")
-		)
-		(pin "A2"
-			(uuid "0712daee-8fe2-4137-a839-d829a7d1a2e4")
-		)
-		(pin "13"
-			(uuid "c752f5be-3be1-4df8-8855-e50442ecdf61")
-		)
-		(pin "A1"
-			(uuid "150bb791-84ae-4771-9b7a-17a05dfcae55")
-		)
-		(pin "24"
-			(uuid "6dbe1564-5a0f-4598-b0d1-a077bb0abc0f")
+		(pin "2"
+			(uuid "0cbb153c-eb17-4ace-bc46-12ceb3f7dbe8")
 		)
 		(instances
-			(project "CW HF Transceiver"
+			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "K2")
+					(reference "C5")
 					(unit 1)
 				)
 			)
