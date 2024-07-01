@@ -1999,16 +1999,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMN13H750S")
-		(at 150.114 78.74 180)
+		(at 150.114 78.74 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "00ad7473-7913-41b1-a3f5-24f1cad95372")
 		(property "Reference" "Q1"
-			(at 143.764 77.4699 0)
+			(at 143.764 80.0101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,7 +2017,7 @@
 			)
 		)
 		(property "Value" "DMN13H750S"
-			(at 143.764 80.0099 0)
+			(at 143.764 77.4701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2026,7 +2026,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 145.034 76.835 0)
+			(at 145.034 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2037,7 +2037,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
-			(at 145.034 74.93 0)
+			(at 145.034 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -427,7 +427,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Device"
+    ]
   },
   "meta": {
     "filename": "CW HF Transceiver.kicad_pro",
