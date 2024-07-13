@@ -3,7 +3,11 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "7df63c50-2965-4ccc-aab0-d581416f8bcb")
-	(paper "A3")
+	(paper "A4")
+	(title_block
+		(title "HF Low Pass Filters")
+		(rev "1")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -937,50 +941,50 @@
 		)
 	)
 	(junction
-		(at 74.93 113.03)
+		(at 160.02 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0866e58a-a284-464c-9fd1-536b18984c48")
 	)
 	(junction
-		(at 39.37 127)
+		(at 124.46 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "444b1351-19fa-4fab-900a-4df4c8bbf84f")
 	)
 	(junction
-		(at 74.93 140.97)
+		(at 160.02 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8f0a17c-1141-47a8-9e67-f4767db1443c")
 	)
 	(junction
-		(at 100.33 128.27)
+		(at 185.42 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc54cfd7-10c1-4150-a027-98ac7c5ce2ff")
 	)
 	(junction
-		(at 50.8 132.08)
+		(at 135.89 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c570c337-b497-415c-9a10-6cbc42731752")
 	)
 	(junction
-		(at 100.33 113.03)
+		(at 185.42 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdb92d26-925f-49da-9483-9d8e72ac577d")
 	)
 	(junction
-		(at 50.8 102.87)
+		(at 135.89 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc80b85f-7d4a-42bc-9551-ac140c07a5d6")
 	)
 	(wire
 		(pts
-			(xy 55.88 140.97) (xy 63.5 140.97)
+			(xy 140.97 115.57) (xy 148.59 115.57)
 		)
 		(stroke
 			(width 0)
@@ -990,7 +994,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 113.03) (xy 71.12 113.03)
+			(xy 160.02 87.63) (xy 156.21 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1000,7 +1004,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 127) (xy 39.37 140.97)
+			(xy 124.46 101.6) (xy 124.46 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1010,7 +1014,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 132.08) (xy 50.8 132.08)
+			(xy 119.38 106.68) (xy 135.89 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1020,7 +1024,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 128.27) (xy 100.33 113.03)
+			(xy 185.42 102.87) (xy 185.42 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1030,7 +1034,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 113.03) (xy 45.72 113.03)
+			(xy 124.46 87.63) (xy 130.81 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1040,7 +1044,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 105.41) (xy 91.44 102.87)
+			(xy 176.53 80.01) (xy 176.53 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1050,7 +1054,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 127) (xy 39.37 127)
+			(xy 119.38 101.6) (xy 124.46 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1060,7 +1064,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 113.03) (xy 63.5 113.03)
+			(xy 140.97 87.63) (xy 148.59 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1070,7 +1074,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 113.03) (xy 86.36 113.03)
+			(xy 160.02 87.63) (xy 171.45 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1080,7 +1084,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 113.03) (xy 96.52 113.03)
+			(xy 185.42 87.63) (xy 181.61 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1090,7 +1094,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 111.76) (xy 100.33 113.03)
+			(xy 185.42 86.36) (xy 185.42 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1100,7 +1104,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 113.03) (xy 39.37 127)
+			(xy 124.46 87.63) (xy 124.46 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1110,7 +1114,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 102.87) (xy 50.8 105.41)
+			(xy 135.89 77.47) (xy 135.89 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1120,7 +1124,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 140.97) (xy 100.33 140.97)
+			(xy 181.61 115.57) (xy 185.42 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1130,7 +1134,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 115.57) (xy 74.93 113.03)
+			(xy 160.02 90.17) (xy 160.02 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1140,7 +1144,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 132.08) (xy 50.8 133.35)
+			(xy 135.89 106.68) (xy 135.89 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1150,7 +1154,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 132.08) (xy 91.44 132.08)
+			(xy 135.89 106.68) (xy 176.53 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1160,7 +1164,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 143.51) (xy 74.93 140.97)
+			(xy 160.02 118.11) (xy 160.02 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1170,7 +1174,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 128.27) (xy 104.14 128.27)
+			(xy 185.42 102.87) (xy 189.23 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1180,7 +1184,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 102.87) (xy 50.8 102.87)
+			(xy 119.38 77.47) (xy 135.89 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1190,7 +1194,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 140.97) (xy 100.33 128.27)
+			(xy 185.42 115.57) (xy 185.42 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1200,7 +1204,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 132.08) (xy 91.44 133.35)
+			(xy 176.53 106.68) (xy 176.53 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1210,7 +1214,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 140.97) (xy 86.36 140.97)
+			(xy 160.02 115.57) (xy 171.45 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1220,7 +1224,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 140.97) (xy 71.12 140.97)
+			(xy 160.02 115.57) (xy 156.21 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1230,7 +1234,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 140.97) (xy 39.37 140.97)
+			(xy 130.81 115.57) (xy 124.46 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1240,7 +1244,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 102.87) (xy 91.44 102.87)
+			(xy 135.89 77.47) (xy 176.53 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1250,7 +1254,7 @@
 	)
 	(text_box "Filter 1: 80m, 60m, 40m - cuttoff 8MHz\nFilter 2: 30m+ - cuttoff 30M"
 		(exclude_from_sim no)
-		(at 45.466 90.17 0)
+		(at 130.556 64.77 0)
 		(size 42.672 5.842)
 		(stroke
 			(width 0)
@@ -1269,7 +1273,7 @@
 	)
 	(hierarchical_label "Filter 1 En"
 		(shape input)
-		(at 34.29 102.87 180)
+		(at 119.38 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1281,7 +1285,7 @@
 	)
 	(hierarchical_label "wave"
 		(shape input)
-		(at 34.29 127 180)
+		(at 119.38 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1293,7 +1297,7 @@
 	)
 	(hierarchical_label "filtered wave"
 		(shape input)
-		(at 104.14 128.27 0)
+		(at 189.23 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1305,7 +1309,7 @@
 	)
 	(hierarchical_label "Filter 2 En"
 		(shape input)
-		(at 34.29 132.08 180)
+		(at 119.38 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1317,7 +1321,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMN13H750S")
-		(at 91.44 110.49 90)
+		(at 176.53 85.09 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1326,8 +1330,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d2be09b-6fd2-45ae-a602-f7c1af959e14")
-		(property "Reference" "Q4"
-			(at 91.44 116.84 90)
+		(property "Reference" "Q3"
+			(at 176.53 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,15 +1339,15 @@
 			)
 		)
 		(property "Value" "DMN13H750S"
-			(at 91.44 119.38 90)
+			(at 176.53 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 93.345 115.57 0)
+		(property "Footprint" ""
+			(at 178.435 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1354,7 +1358,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
-			(at 95.25 115.57 0)
+			(at 180.34 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1364,7 +1368,7 @@
 			)
 		)
 		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
-			(at 91.44 110.49 0)
+			(at 176.53 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1384,24 +1388,24 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "Q4")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 74.93 147.32 0)
+		(lib_id "Connector:TestPoint")
+		(at 124.46 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5b7bbc99-24d9-4c07-8e6a-1cfbb1678961")
-		(property "Reference" "C6"
-			(at 78.74 146.0499 0)
+		(uuid "3f6b90ac-df39-426c-a7e9-03fdb4d67935")
+		(property "Reference" "TP1"
+			(at 129.54 100.3299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1409,8 +1413,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1p"
-			(at 78.74 148.5899 0)
+		(property "Value" "Filters In"
+			(at 129.54 102.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1419,7 +1423,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 75.8952 151.13 0)
+			(at 124.46 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1432,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 147.32 0)
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b89ae5ee-fed3-41f0-91ec-65349f9d0def")
+		)
+		(instances
+			(project "CW HF Transceiver"
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 160.02 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b7bbc99-24d9-4c07-8e6a-1cfbb1678961")
+		(property "Reference" "C18"
+			(at 163.83 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1p"
+			(at 163.83 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 160.9852 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,7 +1508,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 147.32 0)
+			(at 160.02 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1454,7 +1525,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C6")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1462,7 +1533,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Ferrite")
-		(at 67.31 113.03 90)
+		(at 152.4 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1471,7 +1542,7 @@
 		(fields_autoplaced yes)
 		(uuid "62d592f0-9aa9-482c-9454-8b463be2cad1")
 		(property "Reference" "L1"
-			(at 67.31 106.68 90)
+			(at 152.4 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1479,7 +1550,7 @@
 			)
 		)
 		(property "Value" "396u"
-			(at 67.31 109.22 90)
+			(at 152.4 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,7 +1558,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 113.03 0)
+			(at 152.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1496,7 +1567,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 113.03 0)
+			(at 152.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1505,7 +1576,7 @@
 			)
 		)
 		(property "Description" "Inductor with ferrite core"
-			(at 67.31 113.03 0)
+			(at 152.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,7 +1601,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 123.19 0)
+		(at 160.02 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1538,8 +1609,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "665eea5f-f0f7-469c-b801-74f76c5970e6")
-		(property "Reference" "#PWR021"
-			(at 74.93 129.54 0)
+		(property "Reference" "#PWR033"
+			(at 160.02 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1548,7 +1619,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 128.27 0)
+			(at 160.02 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1556,7 +1627,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 123.19 0)
+			(at 160.02 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1565,7 +1636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 123.19 0)
+			(at 160.02 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1574,7 +1645,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 123.19 0)
+			(at 160.02 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1588,7 +1659,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR021")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -1596,7 +1667,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 151.13 0)
+		(at 160.02 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1604,8 +1675,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d62bb8c-546e-4dd9-84eb-914640badb87")
-		(property "Reference" "#PWR022"
-			(at 74.93 157.48 0)
+		(property "Reference" "#PWR034"
+			(at 160.02 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1614,7 +1685,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 156.21 0)
+			(at 160.02 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1622,7 +1693,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 151.13 0)
+			(at 160.02 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1631,7 +1702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 151.13 0)
+			(at 160.02 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1640,7 +1711,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 151.13 0)
+			(at 160.02 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1654,7 +1725,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR022")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -1662,7 +1733,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMN13H750S")
-		(at 50.8 110.49 90)
+		(at 135.89 85.09 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1671,8 +1742,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e53eeec-426a-4696-b546-748e75a66f01")
-		(property "Reference" "Q6"
-			(at 50.8 116.84 90)
+		(property "Reference" "Q1"
+			(at 135.89 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1680,15 +1751,15 @@
 			)
 		)
 		(property "Value" "DMN13H750S"
-			(at 50.8 119.38 90)
+			(at 135.89 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 52.705 115.57 0)
+		(property "Footprint" ""
+			(at 137.795 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1699,7 +1770,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
-			(at 54.61 115.57 0)
+			(at 139.7 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,7 +1780,7 @@
 			)
 		)
 		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
-			(at 50.8 110.49 0)
+			(at 135.89 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1729,7 +1800,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "Q6")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -1737,7 +1808,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMN13H750S")
-		(at 50.8 138.43 90)
+		(at 135.89 113.03 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1746,8 +1817,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96f64ee1-f0ed-4cb3-9d6b-02b1eca07316")
-		(property "Reference" "Q7"
-			(at 50.8 144.78 90)
+		(property "Reference" "Q2"
+			(at 135.89 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1755,15 +1826,15 @@
 			)
 		)
 		(property "Value" "DMN13H750S"
-			(at 50.8 147.32 90)
+			(at 135.89 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 52.705 143.51 0)
+		(property "Footprint" ""
+			(at 137.795 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1774,7 +1845,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
-			(at 54.61 143.51 0)
+			(at 139.7 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1855,7 @@
 			)
 		)
 		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
-			(at 50.8 138.43 0)
+			(at 135.89 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1804,7 +1875,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "Q7")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -1812,7 +1883,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Ferrite")
-		(at 67.31 140.97 90)
+		(at 152.4 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1820,7 +1891,7 @@
 		(dnp no)
 		(uuid "b41c930f-24fd-4ee4-b9bf-56db8c1c5dd9")
 		(property "Reference" "L2"
-			(at 67.31 134.62 90)
+			(at 152.4 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,7 +1899,7 @@
 			)
 		)
 		(property "Value" "28.1u"
-			(at 67.31 137.16 90)
+			(at 152.4 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1836,7 +1907,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 140.97 0)
+			(at 152.4 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1845,7 +1916,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 140.97 0)
+			(at 152.4 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1854,7 +1925,7 @@
 			)
 		)
 		(property "Description" "Inductor with ferrite core"
-			(at 67.31 140.97 0)
+			(at 152.4 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1879,7 +1950,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 100.33 111.76 0)
+		(at 185.42 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1887,8 +1958,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfd96a21-7a23-4174-9399-ecbd8b800289")
-		(property "Reference" "TP1"
-			(at 102.87 107.1879 0)
+		(property "Reference" "TP2"
+			(at 187.96 81.7879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1896,8 +1967,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 102.87 109.7279 0)
+		(property "Value" "Filters out"
+			(at 187.96 84.3279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,7 +1977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 111.76 0)
+			(at 190.5 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,7 +1986,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 105.41 111.76 0)
+			(at 190.5 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1924,7 +1995,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 100.33 111.76 0)
+			(at 185.42 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +2009,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -1946,7 +2017,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMN13H750S")
-		(at 91.44 138.43 90)
+		(at 176.53 113.03 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1955,8 +2026,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c78f00eb-1b3b-4273-bf94-17d781f380d1")
-		(property "Reference" "Q5"
-			(at 91.44 144.78 90)
+		(property "Reference" "Q4"
+			(at 176.53 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1964,15 +2035,15 @@
 			)
 		)
 		(property "Value" "DMN13H750S"
-			(at 91.44 147.32 90)
+			(at 176.53 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 93.345 143.51 0)
+		(property "Footprint" ""
+			(at 178.435 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1983,7 +2054,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf"
-			(at 95.25 143.51 0)
+			(at 180.34 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1993,7 +2064,7 @@
 			)
 		)
 		(property "Description" "1A Id, 130V Vds, N-Channel MOSFET, SOT-23"
-			(at 91.44 138.43 0)
+			(at 176.53 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2013,7 +2084,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "Q5")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -2021,7 +2092,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 74.93 119.38 0)
+		(at 160.02 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2029,8 +2100,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd52899e-994b-4214-969b-c167b0e3d72c")
-		(property "Reference" "C5"
-			(at 78.74 118.1099 0)
+		(property "Reference" "C17"
+			(at 163.83 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2039,7 +2110,7 @@
 			)
 		)
 		(property "Value" "1p"
-			(at 78.74 120.6499 0)
+			(at 163.83 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2047,8 +2118,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 75.8952 123.19 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 160.9852 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2057,7 +2128,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 119.38 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2066,7 +2137,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 119.38 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2083,7 +2154,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C5")
+					(reference "C17")
 					(unit 1)
 				)
 			)
