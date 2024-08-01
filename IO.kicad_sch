@@ -574,6 +574,16 @@
 		)
 		(uuid "e73fd10f-552b-4b2c-a833-134abe6dcf91")
 	)
+	(text "TODO: plan & make IO"
+		(exclude_from_sim no)
+		(at 109.474 66.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "41481ae8-714d-4f92-b44d-45db7f3384ed")
+	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 107.95 106.68 0)
@@ -730,7 +740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccfd2aac-df10-438a-881e-c405e0d72509")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR041"
 			(at 97.79 87.63 0)
 			(effects
 				(font
@@ -780,7 +790,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/619a8caf-8757-451b-80db-58c150aafaca"
-					(reference "#PWR050")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)

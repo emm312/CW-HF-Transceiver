@@ -1271,6 +1271,16 @@
 		)
 		(uuid "5892b99f-5554-401d-be8b-0a46c52fd3b9")
 	)
+	(text "TODO: Replace these filters with chebyshev/butterworth filters\n"
+		(exclude_from_sim no)
+		(at 150.368 72.644 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4dba82a-db2a-413c-9619-e0d6d51772db")
+	)
 	(hierarchical_label "Filter 1 En"
 		(shape input)
 		(at 119.38 77.47 180)
@@ -1404,7 +1414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f6b90ac-df39-426c-a7e9-03fdb4d67935")
-		(property "Reference" "TP1"
+		(property "Reference" "TP2"
 			(at 129.54 100.3299 90)
 			(effects
 				(font
@@ -1455,7 +1465,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -1471,7 +1481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b7bbc99-24d9-4c07-8e6a-1cfbb1678961")
-		(property "Reference" "C18"
+		(property "Reference" "C9"
 			(at 163.83 120.6499 0)
 			(effects
 				(font
@@ -1525,7 +1535,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C18")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -1609,7 +1619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "665eea5f-f0f7-469c-b801-74f76c5970e6")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR023"
 			(at 160.02 104.14 0)
 			(effects
 				(font
@@ -1659,7 +1669,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR033")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -1675,7 +1685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d62bb8c-546e-4dd9-84eb-914640badb87")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR024"
 			(at 160.02 132.08 0)
 			(effects
 				(font
@@ -1725,7 +1735,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR034")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -1958,7 +1968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfd96a21-7a23-4174-9399-ecbd8b800289")
-		(property "Reference" "TP2"
+		(property "Reference" "TP3"
 			(at 187.96 81.7879 0)
 			(effects
 				(font
@@ -2009,7 +2019,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "TP2")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2100,7 +2110,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd52899e-994b-4214-969b-c167b0e3d72c")
-		(property "Reference" "C17"
+		(property "Reference" "C8"
 			(at 163.83 92.7099 0)
 			(effects
 				(font
@@ -2154,7 +2164,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C17")
+					(reference "C8")
 					(unit 1)
 				)
 			)
