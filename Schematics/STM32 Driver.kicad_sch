@@ -2319,6 +2319,231 @@
 				)
 			)
 		)
+		(symbol "Power_Protection:USB6B1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "USB6B1"
+				(at 5.08 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf"
+				(at -24.13 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "5V Data line protection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "ESD USB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USB6B1_0_1"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "USB6B1_1_1"
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54) hide
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:MCP1700x-330xxMB"
 			(pin_names
 				(offset 0.254)
@@ -2794,6 +3019,126 @@
 				)
 			)
 		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 212.09 53.34)
@@ -2830,6 +3175,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46be6573-0931-480e-9514-02d6774b3c09")
+	)
+	(junction
+		(at 77.47 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b701523-1024-4337-811b-a1731823988d")
 	)
 	(junction
 		(at 121.92 53.34)
@@ -2930,10 +3281,6 @@
 	(no_connect
 		(at 193.04 95.25)
 		(uuid "1694810e-dc24-40fb-86e2-b3c0f38fb93a")
-	)
-	(no_connect
-		(at 193.04 105.41)
-		(uuid "27ae091b-5ba1-4f51-b7a3-49a48af95677")
 	)
 	(no_connect
 		(at 160.02 97.79)
@@ -3055,7 +3402,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 102.87) (xy 77.47 102.87)
+			(xy 76.2 102.87) (xy 80.01 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3082,6 +3429,16 @@
 			(type default)
 		)
 		(uuid "124908c7-156c-4970-8005-77d1e08743c9")
+	)
+	(wire
+		(pts
+			(xy 195.58 107.95) (xy 195.58 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "177729e5-847d-4a32-96b5-48659e32dab5")
 	)
 	(wire
 		(pts
@@ -3192,6 +3549,16 @@
 			(type default)
 		)
 		(uuid "46251255-cf98-464e-bb74-4036f861a46a")
+	)
+	(wire
+		(pts
+			(xy 196.85 107.95) (xy 195.58 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48480e2f-e7c5-4626-a409-d9491d1ccc83")
 	)
 	(wire
 		(pts
@@ -3325,6 +3692,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 105.41) (xy 193.04 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8fcc73-2cc8-41d2-a513-a35eedcb2fde")
+	)
+	(wire
+		(pts
 			(xy 212.09 53.34) (xy 223.52 53.34)
 		)
 		(stroke
@@ -3332,6 +3709,16 @@
 			(type default)
 		)
 		(uuid "73e7dc96-88ca-44c0-8814-6db8fbba80cd")
+	)
+	(wire
+		(pts
+			(xy 82.55 133.35) (xy 77.47 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7990bb04-8375-43cb-9b0a-bdef68ea64ca")
 	)
 	(wire
 		(pts
@@ -3382,6 +3769,26 @@
 			(type default)
 		)
 		(uuid "845ad01b-1ffd-463d-a40b-7467da0e5660")
+	)
+	(wire
+		(pts
+			(xy 77.47 82.55) (xy 77.47 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87ba2856-987e-4286-9a1f-afb5f86e25b6")
+	)
+	(wire
+		(pts
+			(xy 80.01 128.27) (xy 82.55 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2a12ea-5381-4da4-a747-fce59993f3bf")
 	)
 	(wire
 		(pts
@@ -3452,6 +3859,26 @@
 			(type default)
 		)
 		(uuid "960d7c0e-99fd-4cb8-b724-df94bd714b9b")
+	)
+	(wire
+		(pts
+			(xy 80.01 102.87) (xy 80.01 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981a43a1-1ad0-46ed-a0fb-ee9fb4c68ccf")
+	)
+	(wire
+		(pts
+			(xy 77.47 133.35) (xy 77.47 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ae348e-d8f7-4c50-8e11-8d6fa4276451")
 	)
 	(wire
 		(pts
@@ -3565,6 +3992,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 87.63) (xy 74.93 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c78372d7-3b98-4faf-9f75-6c8c9ff50a7b")
+	)
+	(wire
+		(pts
 			(xy 76.2 100.33) (xy 76.2 102.87)
 		)
 		(stroke
@@ -3615,6 +4052,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 87.63) (xy 77.47 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9fb830e-d2c9-42a9-b1c2-5d6be5634a31")
+	)
+	(wire
+		(pts
 			(xy 97.79 53.34) (xy 97.79 55.88)
 		)
 		(stroke
@@ -3625,7 +4072,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 86.36) (xy 82.55 87.63)
+			(xy 86.36 86.36) (xy 86.36 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3713,7 +4160,7 @@
 		)
 		(uuid "9228fa95-e322-4968-9db2-5bfce2a2a260")
 	)
-	(label "D+"
+	(label "D-"
 		(at 195.58 100.33 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3724,7 +4171,29 @@
 		)
 		(uuid "055f83d8-5253-4c04-8349-697a0e60a411")
 	)
+	(label "D+"
+		(at 102.87 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1975c428-f68e-45c1-a81c-bfa12bc62c5c")
+	)
 	(label "D-"
+		(at 102.87 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5415f045-2dff-4033-bfb2-0e17f57a604d")
+	)
+	(label "D+"
 		(at 195.58 97.79 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4166,215 +4635,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_ST_STM32F0:STM32F072C8Tx")
-		(at 175.26 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18fdd24a-e1b1-4086-a9a6-dc19c8be4969")
-		(property "Reference" "U2"
-			(at 179.9941 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32F072C8Tx"
-			(at 179.9941 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at 162.56 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f072c8.pdf"
-			(at 175.26 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0 MCU, 64KB flash, 16KB RAM, 48 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
-			(at 175.26 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "6b2a5411-1c9f-46c4-bab7-5c085257e7bc")
-		)
-		(pin "19"
-			(uuid "fb36876c-998e-4b59-9302-885801412422")
-		)
-		(pin "30"
-			(uuid "fb9a79d2-e392-477d-8d3a-f6821b849157")
-		)
-		(pin "5"
-			(uuid "ed0adebd-bc1b-44ed-a9df-5b4de3ebd171")
-		)
-		(pin "35"
-			(uuid "4edbc4b1-51a9-4eb0-ab9d-baa76bbfd0f6")
-		)
-		(pin "40"
-			(uuid "fb6bb1af-8817-427f-bebb-7005fbe2de90")
-		)
-		(pin "34"
-			(uuid "d547533a-694e-42c0-bc2f-3159552691fd")
-		)
-		(pin "41"
-			(uuid "8a8009c3-7ef3-4507-a732-3270cf9559a2")
-		)
-		(pin "8"
-			(uuid "a52a0ea0-6c9b-44e4-b5f9-7f1c1c2c375b")
-		)
-		(pin "46"
-			(uuid "bb524a46-68ed-4a42-9e81-614e9a0ef539")
-		)
-		(pin "38"
-			(uuid "adc1a52b-5c8b-4693-8c09-00b24de8d976")
-		)
-		(pin "12"
-			(uuid "52a9b468-819d-4bb5-ae76-558b3dafb294")
-		)
-		(pin "13"
-			(uuid "214c648d-b0a1-40b8-81c4-82bbfe3592d4")
-		)
-		(pin "42"
-			(uuid "f213b4f3-e00b-4585-82ac-9803990a64e1")
-		)
-		(pin "9"
-			(uuid "6e7a1769-de37-496e-9512-0e4dc8ef4343")
-		)
-		(pin "27"
-			(uuid "9705e92b-33e1-4d47-8e3f-97b8f888a5f4")
-		)
-		(pin "29"
-			(uuid "0c6042fb-e8f9-4d4c-b038-b3f96b71e523")
-		)
-		(pin "24"
-			(uuid "ff4f0990-7ac6-4891-a5a1-e762f8b433a9")
-		)
-		(pin "18"
-			(uuid "8f675e5d-1653-4034-83e4-656334ce5a47")
-		)
-		(pin "17"
-			(uuid "d3cb2ff8-5cd5-47e9-bc29-4bfc0a8708e5")
-		)
-		(pin "47"
-			(uuid "e90d6725-1076-47d4-8261-004a723f097e")
-		)
-		(pin "4"
-			(uuid "d2e59026-d587-4ae3-ab93-d8ba2a1199e6")
-		)
-		(pin "20"
-			(uuid "4d34ab82-107e-46a0-9990-7de63be8ce31")
-		)
-		(pin "28"
-			(uuid "0649a878-9bfb-4aec-b54a-037654910f7b")
-		)
-		(pin "25"
-			(uuid "b0c5823a-603c-4d64-a94e-633e3eaf4df1")
-		)
-		(pin "22"
-			(uuid "bd3401f9-acda-44e2-9879-c91de728de04")
-		)
-		(pin "37"
-			(uuid "86491f92-a8da-4dc1-b2da-0218026c7597")
-		)
-		(pin "11"
-			(uuid "33862767-1b76-430a-929d-784ef36f2bfc")
-		)
-		(pin "31"
-			(uuid "23edfa53-de14-435e-a0df-b55f10065765")
-		)
-		(pin "21"
-			(uuid "eac00f0d-fff6-4601-b6e4-7eac2abaf5bd")
-		)
-		(pin "45"
-			(uuid "60e164cc-9879-4877-a406-fb112e065e95")
-		)
-		(pin "1"
-			(uuid "1017f206-c054-4110-b890-49c2cf6f8baf")
-		)
-		(pin "15"
-			(uuid "dbb2fff2-3c58-4844-b763-e99d1b0efa06")
-		)
-		(pin "43"
-			(uuid "68ee7366-05ec-4014-8c92-a609f0dfacd5")
-		)
-		(pin "36"
-			(uuid "f1766031-9929-4272-a175-7a7617baba2e")
-		)
-		(pin "44"
-			(uuid "819f8970-9278-49e1-81eb-0d15cdd33be4")
-		)
-		(pin "33"
-			(uuid "c14e5b43-a424-4e49-b530-8a5063891ceb")
-		)
-		(pin "32"
-			(uuid "fdd1af01-c6d2-4ad3-8d6b-e6de83a6997e")
-		)
-		(pin "16"
-			(uuid "8433cce2-6df7-4d2d-a4d6-eae3cdd72932")
-		)
-		(pin "6"
-			(uuid "981af6a6-3747-45d2-a364-05385f6a06b9")
-		)
-		(pin "23"
-			(uuid "6b65e028-804c-490c-90e4-d192404ec803")
-		)
-		(pin "39"
-			(uuid "78302ce1-59f7-4e95-88be-37174b94ae40")
-		)
-		(pin "2"
-			(uuid "470d02ca-488b-4908-bac1-f14fe7de2e4b")
-		)
-		(pin "26"
-			(uuid "f65be70c-65ea-44f3-9330-e704cf9fbf44")
-		)
-		(pin "7"
-			(uuid "f1bc310f-0991-4f42-bd88-e289f84349f7")
-		)
-		(pin "10"
-			(uuid "e215d40a-945f-4acb-a53e-ce8b86301249")
-		)
-		(pin "48"
-			(uuid "08265f2f-b7ae-40db-b419-63b4ebb8e607")
-		)
-		(pin "14"
-			(uuid "7c95d26b-8652-4d69-be3a-b5207e9e0ba3")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 172.72 49.53 0)
 		(unit 1)
@@ -4435,6 +4695,72 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 77.47 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d940a8b-e70a-4caa-8d3f-635728001ac9")
+		(property "Reference" "#PWR051"
+			(at 77.47 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 77.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14b8be44-e9c6-482b-a2e8-64d34a41f515")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -4512,7 +4838,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 78.74 87.63 180)
+		(at 82.55 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4521,7 +4847,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d0b8ab6-7b81-4877-b507-17089a3abe97")
 		(property "Reference" "D2"
-			(at 78.74 81.28 0)
+			(at 82.55 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +4855,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 78.74 83.82 0)
+			(at 82.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4537,7 +4863,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 87.63 0)
+			(at 82.55 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4546,7 +4872,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 87.63 0)
+			(at 82.55 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4555,7 +4881,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 78.74 87.63 0)
+			(at 82.55 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,7 +4890,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 78.74 87.63 0)
+			(at 82.55 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4573,7 +4899,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 78.74 87.63 0)
+			(at 82.55 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4904,6 +5230,72 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 92.71 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56674ae1-9564-45e1-a4e2-1b71df287bc4")
+		(property "Reference" "#PWR052"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 92.71 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 92.71 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "852c74a8-a437-4fc8-a4d5-9953c394fced")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -5249,7 +5641,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 82.55 86.36 0)
+		(at 86.36 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5258,7 +5650,7 @@
 		(fields_autoplaced yes)
 		(uuid "961d1ed6-c0a5-46f0-a21d-c0994dfe7241")
 		(property "Reference" "#PWR012"
-			(at 82.55 90.17 0)
+			(at 86.36 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5267,7 +5659,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 82.55 81.28 0)
+			(at 86.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5275,7 +5667,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 86.36 0)
+			(at 86.36 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5284,7 +5676,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 86.36 0)
+			(at 86.36 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5293,7 +5685,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 86.36 0)
+			(at 86.36 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5308,6 +5700,215 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_ST_STM32F0:STM32F072C8Tx")
+		(at 175.26 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9979480d-ec36-4e31-b300-6ab1b1c02bc9")
+		(property "Reference" "U2"
+			(at 179.9941 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32F072C8Tx"
+			(at 179.9941 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at 162.56 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f072c8.pdf"
+			(at 175.26 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0 MCU, 64KB flash, 16KB RAM, 48 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(at 175.26 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "c2946e8c-5554-455c-b691-12406ada7c0e")
+		)
+		(pin "9"
+			(uuid "6c70984a-e8b8-4ed8-bda9-db7d77a4d512")
+		)
+		(pin "3"
+			(uuid "babf281e-8126-4183-bba9-35477286c9dd")
+		)
+		(pin "25"
+			(uuid "316bf36d-5920-4e72-a6de-1f1dad4a0349")
+		)
+		(pin "1"
+			(uuid "afa2d792-bd46-43be-8657-4f1c82a1abd2")
+		)
+		(pin "44"
+			(uuid "5076338f-b06e-4d14-9ee3-a033f7edd7ac")
+		)
+		(pin "45"
+			(uuid "196c6ce1-dd60-4c1f-bb45-067fc79dbe06")
+		)
+		(pin "14"
+			(uuid "2879e541-ddf8-47a2-8c95-14d85c8ea41b")
+		)
+		(pin "29"
+			(uuid "4b56d355-a53b-4566-a13c-f0b7e611e66b")
+		)
+		(pin "46"
+			(uuid "027d0e7a-b3a2-4493-85fd-0783930dd5c7")
+		)
+		(pin "47"
+			(uuid "98ef3ae4-0f53-449d-8378-d57c33bbec2e")
+		)
+		(pin "32"
+			(uuid "a68addcf-1299-418b-83a2-cd376e396f10")
+		)
+		(pin "16"
+			(uuid "a03cd860-f347-4a9a-9575-d4d92f464753")
+		)
+		(pin "15"
+			(uuid "2aa1004e-2183-4675-9ee7-925ad7c970e9")
+		)
+		(pin "42"
+			(uuid "9e27e615-4606-4435-a024-a4086256a26e")
+		)
+		(pin "43"
+			(uuid "93d593ac-4d54-42ef-9f47-c01909d0e953")
+		)
+		(pin "36"
+			(uuid "4e7e929c-2ea9-4bb4-9294-e200792df9a4")
+		)
+		(pin "35"
+			(uuid "5037922b-069a-4ce5-a7ff-26210c550f2d")
+		)
+		(pin "6"
+			(uuid "b8bf340a-49dd-4610-b87a-4ac9b11a1015")
+		)
+		(pin "7"
+			(uuid "130275d8-74a3-469e-806d-33de5d0b9dbe")
+		)
+		(pin "12"
+			(uuid "d5b5ea40-0b09-4ba0-af02-45c038e1174b")
+		)
+		(pin "2"
+			(uuid "2c63156a-dbbb-4ab3-9262-7f440292cfd5")
+		)
+		(pin "20"
+			(uuid "eefae09d-2932-4f95-8e34-7f973c439578")
+		)
+		(pin "34"
+			(uuid "3a8ecd30-bb50-4f1d-aaeb-049ee46d0469")
+		)
+		(pin "11"
+			(uuid "bf9e9709-82a2-4ea0-a781-7867f953a148")
+		)
+		(pin "37"
+			(uuid "dfb5be4f-fe30-4651-b8c1-c5e4e3624606")
+		)
+		(pin "38"
+			(uuid "75171995-dcd5-490f-a87f-49b2261e86fa")
+		)
+		(pin "28"
+			(uuid "96a6d7c8-89fc-44fd-9bb6-1febba7b47c2")
+		)
+		(pin "10"
+			(uuid "78ae1b0a-36da-484f-9199-3a8aa6bf58aa")
+		)
+		(pin "17"
+			(uuid "6a3c39ff-f129-4953-91d8-644005390de9")
+		)
+		(pin "27"
+			(uuid "f2b75222-067f-4897-a85c-e17a187f6200")
+		)
+		(pin "13"
+			(uuid "3f65b65a-1a3e-4330-97dd-346274828d45")
+		)
+		(pin "22"
+			(uuid "f1a4bc38-b501-4b1b-9a03-b168536e2199")
+		)
+		(pin "30"
+			(uuid "75d92e0b-c485-491e-8007-3f5e42393d37")
+		)
+		(pin "48"
+			(uuid "91e89a37-a1f0-4b8e-9034-574b2969bc0e")
+		)
+		(pin "5"
+			(uuid "01482708-948d-4bf9-bfe2-cba16e2c6c30")
+		)
+		(pin "33"
+			(uuid "6a3fe7cf-38e1-46ec-b267-930b63949b8b")
+		)
+		(pin "21"
+			(uuid "dec83548-a69e-4604-b783-4502a1a9b30e")
+		)
+		(pin "39"
+			(uuid "28bc3689-c7ba-4ea5-81ff-fa672b6cf719")
+		)
+		(pin "4"
+			(uuid "db2e245a-881d-4e3b-9c22-22f7e8349e36")
+		)
+		(pin "40"
+			(uuid "d34c1ec4-8829-45af-b643-08b448761504")
+		)
+		(pin "41"
+			(uuid "70e5ebae-8137-4bdd-af46-f7c53802aa1b")
+		)
+		(pin "26"
+			(uuid "43e44eca-cbef-4b24-ae41-a027071c45f1")
+		)
+		(pin "24"
+			(uuid "7a80ddc1-7083-46f2-8f4e-85e5d9601d2a")
+		)
+		(pin "18"
+			(uuid "d30946f2-1ff4-46ee-9aa9-7dbe9b45e7fd")
+		)
+		(pin "19"
+			(uuid "30d812a2-f677-45b9-9362-8bcd33ac5a33")
+		)
+		(pin "23"
+			(uuid "880916d3-3d1e-4889-a75d-3ca6c5627080")
+		)
+		(pin "31"
+			(uuid "eb4c229a-3764-4a0d-85d7-b01cb35af6c7")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5576,6 +6177,139 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c94a08a4-3112-44b8-b513-8930bc18935e")
+		(property "Reference" "#PWR053"
+			(at 92.71 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "418bfad0-4d72-4da0-b24c-38cdc70380b8")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 196.85 107.95 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc2cf8cd-1bd0-427e-88ad-83ae2eccadd5")
+		(property "Reference" "TP8"
+			(at 201.93 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SWCLK"
+			(at 201.93 109.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cd04350-7b79-4390-992d-ba087897837c")
+		)
+		(instances
+			(project "CW HF Transceiver"
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -5915,6 +6649,94 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Protection:USB6B1")
+		(at 92.71 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed751ccf-afe3-49ce-9f7c-695f8dfe285e")
+		(property "Reference" "U7"
+			(at 94.9041 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USB6B1"
+			(at 94.9041 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 92.71 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf"
+			(at 68.58 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5V Data line protection"
+			(at 92.71 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbd546b2-a8cb-4895-8787-5e1b1f827cff")
+		)
+		(pin "2"
+			(uuid "4cfb4caf-6a43-467b-b9ce-19b784514f7a")
+		)
+		(pin "7"
+			(uuid "5ccfa177-a109-4ad0-bddd-695e3197ab78")
+		)
+		(pin "6"
+			(uuid "882dbc38-a212-4535-a7cf-a127736897cd")
+		)
+		(pin "5"
+			(uuid "ba0e4975-5a45-46f1-ba36-b6506021df24")
+		)
+		(pin "3"
+			(uuid "deb165c2-3105-4a5b-b288-5f01e9f7a56e")
+		)
+		(pin "4"
+			(uuid "3ff0854d-36e8-4c3a-8af6-a0c97cf8a26c")
+		)
+		(pin "8"
+			(uuid "075a82b7-2bda-4621-b231-44e907185587")
+		)
+		(instances
+			(project "CW HF Transceiver"
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/a066159c-9571-4264-88b6-93b3432341af"
+					(reference "U7")
 					(unit 1)
 				)
 			)

@@ -586,16 +586,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
-		(at 107.95 106.68 0)
+		(at 113.03 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1e111d5b-cad8-4e82-ad42-f9cb0d1235cf")
+		(uuid "5198a2f9-d3d0-4a41-853e-2633c69d4391")
 		(property "Reference" "RV1"
-			(at 105.41 105.4099 0)
+			(at 110.49 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -603,8 +603,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AF Gain"
-			(at 105.41 107.9499 0)
+		(property "Value" "Volume"
+			(at 110.49 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -613,7 +613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 106.68 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -622,7 +622,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 106.68 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -631,7 +631,7 @@
 			)
 		)
 		(property "Description" "Potentiometer"
-			(at 107.95 106.68 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -640,13 +640,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0a2a988-dc6c-465b-97c7-34006bffa471")
+			(uuid "cfb4fdd3-c3a6-4b1a-8e23-3b33db2adfdc")
 		)
 		(pin "2"
-			(uuid "0035e4e6-18c8-4e40-b691-afd55438b6f2")
+			(uuid "5ecede0e-8b8d-4cbf-a8c1-f01d3f1513cf")
 		)
 		(pin "3"
-			(uuid "37f5375d-bb9a-413d-ab72-4e76a2200b21")
+			(uuid "8ca3b2be-3966-47f2-b587-259c502ff598")
 		)
 		(instances
 			(project ""
