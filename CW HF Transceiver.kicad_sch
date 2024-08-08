@@ -537,6 +537,163 @@
 				)
 			)
 		)
+		(symbol "Device:L"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 -2.54)
+					(mid 0.6323 -1.905)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 0.635)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 1.905)
+					(end 0 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -642,6 +799,168 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Diode:1N4007"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4007"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4007_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4007_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1092,6 +1411,12 @@
 		)
 	)
 	(junction
+		(at 187.96 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00589ed2-7d8d-4849-9d00-06be9254df69")
+	)
+	(junction
 		(at 40.64 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1116,6 +1441,12 @@
 		(uuid "aede7749-c20a-4023-89ca-7cf6fac277fc")
 	)
 	(junction
+		(at 187.96 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6761e2b-5e3d-4fbc-95cc-5dd78e87010b")
+	)
+	(junction
 		(at 129.54 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1132,6 +1463,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e55aa4e6-7540-42b2-8a15-42883b38d419")
+	)
+	(wire
+		(pts
+			(xy 187.96 110.49) (xy 191.77 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0523b509-1e9b-40d3-99cb-b92c660c42e7")
 	)
 	(wire
 		(pts
@@ -1152,6 +1493,16 @@
 			(type default)
 		)
 		(uuid "0ceec333-8457-45c9-94db-23d7c08113a5")
+	)
+	(wire
+		(pts
+			(xy 187.96 124.46) (xy 187.96 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d97f870-5575-4fa3-ae45-646c136e836c")
 	)
 	(wire
 		(pts
@@ -1245,6 +1596,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 118.11) (xy 149.86 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3716d9b5-c362-4431-8e81-3c66e31f2f73")
+	)
+	(wire
+		(pts
 			(xy 38.1 58.42) (xy 40.64 58.42)
 		)
 		(stroke
@@ -1265,6 +1626,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 111.76) (xy 187.96 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df16785-231e-4538-9687-2ad5f49362e5")
+	)
+	(wire
+		(pts
 			(xy 127 92.71) (xy 127 107.95)
 		)
 		(stroke
@@ -1275,6 +1646,36 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 110.49) (xy 199.39 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58efe59b-89c8-4844-863f-8c153b145f43")
+	)
+	(wire
+		(pts
+			(xy 187.96 110.49) (xy 187.96 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594efa7c-a965-4745-9bb4-2350af081587")
+	)
+	(wire
+		(pts
+			(xy 176.53 111.76) (xy 187.96 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b909434-802f-4788-a92d-5279977c23a9")
+	)
+	(wire
+		(pts
 			(xy 35.56 82.55) (xy 48.26 82.55)
 		)
 		(stroke
@@ -1282,26 +1683,6 @@
 			(type default)
 		)
 		(uuid "5c8bf61c-23b5-4f46-a0eb-d12fa51bae8a")
-	)
-	(wire
-		(pts
-			(xy 175.26 120.65) (xy 179.07 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60c5a94e-8b55-4e09-b92c-9366fe5053d3")
-	)
-	(wire
-		(pts
-			(xy 187.96 106.68) (xy 187.96 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "718fe737-f067-423e-ae27-e26fa1c921fd")
 	)
 	(wire
 		(pts
@@ -1335,6 +1716,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 120.65) (xy 149.86 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b46c71-85a6-4724-9f2b-0f2a8ecb5d1b")
+	)
+	(wire
+		(pts
 			(xy 97.79 109.22) (xy 97.79 113.03)
 		)
 		(stroke
@@ -1345,6 +1736,26 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 111.76) (xy 205.74 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a105fd2-afac-4ed9-b4c9-d83d12e46b9c")
+	)
+	(wire
+		(pts
+			(xy 187.96 106.68) (xy 187.96 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d186274-ff2b-4b5b-b4af-788096d62726")
+	)
+	(wire
+		(pts
 			(xy 40.64 58.42) (xy 40.64 55.88)
 		)
 		(stroke
@@ -1352,6 +1763,16 @@
 			(type default)
 		)
 		(uuid "8ef548d8-ec3d-4dbf-8660-e471e700fee0")
+	)
+	(wire
+		(pts
+			(xy 176.53 124.46) (xy 187.96 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "921bd6a2-2415-408d-aeb0-21bbe0e30d61")
 	)
 	(wire
 		(pts
@@ -1382,16 +1803,6 @@
 			(type default)
 		)
 		(uuid "d69b9338-f735-444f-8883-cc9e3e4fab08")
-	)
-	(wire
-		(pts
-			(xy 143.51 123.19) (xy 149.86 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db96670e-8e8e-4e83-b8fa-7a2f690f0dfa")
 	)
 	(wire
 		(pts
@@ -1488,17 +1899,6 @@
 		)
 		(uuid "b8885deb-c583-4ae5-b13b-997983d29a4f")
 	)
-	(label "tx"
-		(at 179.07 120.65 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf591502-c25b-4439-8b8e-23e9a9eae4f4")
-	)
 	(label "dit"
 		(at 36.83 85.09 0)
 		(fields_autoplaced yes)
@@ -1590,7 +1990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06c6925c-d671-422b-975e-5be0ae20a62d")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR07"
 			(at 97.79 105.41 0)
 			(effects
 				(font
@@ -1640,7 +2040,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
-					(reference "#PWR010")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -1708,6 +2108,73 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 195.58 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25078192-6778-44c7-97eb-331984faf479")
+		(property "Reference" "L14"
+			(at 195.58 108.458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 195.58 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a322478f-4d26-4c4d-9990-83e27e7e70e9")
+		)
+		(pin "1"
+			(uuid "12370ef6-e7ab-4fe3-9a8c-63eec74c4e00")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
+					(reference "L14")
 					(unit 1)
 				)
 			)
@@ -1996,7 +2463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac04ff3b-9bf2-4371-a534-a8e1201bcb43")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR05"
 			(at 68.58 111.76 0)
 			(effects
 				(font
@@ -2046,7 +2513,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
-					(reference "#PWR07")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2062,7 +2529,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1027b22-fc75-4cba-a3aa-f1cea5abb02a")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR06"
 			(at 77.47 111.76 0)
 			(effects
 				(font
@@ -2112,7 +2579,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
-					(reference "#PWR09")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2326,6 +2793,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 205.74 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc4e6b15-3d15-463f-a42e-ebf4309c95ad")
+		(property "Reference" "#PWR072"
+			(at 205.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a2eecd0-657d-44f0-89dc-d972d181a8d9")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 40.64 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2521,6 +3054,94 @@
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4007")
+		(at 187.96 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed1ca5bb-c6c4-4e67-9b46-e60706ecfac6")
+		(property "Reference" "D11"
+			(at 190.5 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 190.5 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 183.515 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 187.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+			(at 187.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 187.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 187.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e52bc28-21f2-4362-8ff4-df19ccb5591a")
+		)
+		(pin "2"
+			(uuid "cf248111-8a36-482f-9b75-125f9eaf6628")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -2797,7 +3418,7 @@
 	)
 	(sheet
 		(at 149.86 107.95)
-		(size 25.4 23.114)
+		(size 26.67 20.32)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2817,7 +3438,7 @@
 			)
 		)
 		(property "Sheetfile" "filtering.kicad_sch"
-			(at 149.86 131.6486 0)
+			(at 149.86 128.8546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2836,7 +3457,7 @@
 			(uuid "09aebfe7-66ee-43f6-a312-2ebbbde3c31d")
 		)
 		(pin "filtered wave" input
-			(at 175.26 120.65 0)
+			(at 176.53 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,7 +3467,7 @@
 			(uuid "98555fe9-addb-44b1-81fe-4beae49714a2")
 		)
 		(pin "Filter 2 En" input
-			(at 149.86 123.19 180)
+			(at 149.86 118.11 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,6 +3486,26 @@
 			)
 			(uuid "0f5fa00e-fae1-4d5c-9c0a-60eeb6588afc")
 		)
+		(pin "Filter 3 En" input
+			(at 149.86 120.65 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "99c339a5-d8b0-472f-a731-7a4e132f9817")
+		)
+		(pin "t{slash}r rbias" output
+			(at 176.53 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7535a602-e78b-4d3a-9fce-891c889967fd")
+		)
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8"
@@ -2875,7 +3516,7 @@
 	)
 	(sheet
 		(at 110.49 107.95)
-		(size 33.02 23.114)
+		(size 33.02 20.32)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2895,7 +3536,7 @@
 			)
 		)
 		(property "Sheetfile" "STM32 Driver.kicad_sch"
-			(at 110.49 131.6486 0)
+			(at 110.49 128.8546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2944,7 +3585,7 @@
 			(uuid "3e90db84-28d0-4756-b081-61d026ab1e31")
 		)
 		(pin "Filter 2 En" output
-			(at 143.51 123.19 0)
+			(at 143.51 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2972,6 +3613,16 @@
 				(justify left)
 			)
 			(uuid "902010d1-f1bb-48c7-98c3-24e524b98b89")
+		)
+		(pin "Filter 3 En" output
+			(at 143.51 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "83f5f43e-2fe8-4526-a67b-3960a3f7dd79")
 		)
 		(instances
 			(project "CW HF Transceiver"
