@@ -2767,126 +2767,6 @@
 				)
 			)
 		)
-		(symbol "power:Vdrive"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "Vdrive"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"Vdrive\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Vdrive_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Vdrive_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 96.52 91.44)
@@ -4410,6 +4290,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 187.96 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "269786e3-cf19-4dd3-af7a-55ff1c1cef67")
+		(property "Reference" "#PWR059"
+			(at 187.96 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 187.96 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 187.96 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baccd42f-8397-4d55-9919-bce888ece9bd")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 31.75 41.91 0)
 		(unit 1)
@@ -4419,7 +4365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b0dbbce-9ce1-4caa-b176-a39b1149e8d4")
-		(property "Reference" "C25"
+		(property "Reference" "C26"
 			(at 35.56 40.6399 0)
 			(effects
 				(font
@@ -4473,7 +4419,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "C25")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -4813,7 +4759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43d08c41-0395-4f7e-b197-bb307806b9ca")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR062"
 			(at 209.55 67.31 0)
 			(effects
 				(font
@@ -4863,7 +4809,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR060")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -4879,7 +4825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49468d8d-2461-4fd1-9898-c62c87fac3cf")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR061"
 			(at 207.01 31.75 0)
 			(effects
 				(font
@@ -4929,7 +4875,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR059")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -4945,7 +4891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d09bb5f-94df-4c35-8557-383147359a62")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR057"
 			(at 80.01 144.78 0)
 			(effects
 				(font
@@ -4995,7 +4941,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR055")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -5087,7 +5033,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c1f150b-2eb8-4313-8833-bbf4922edc54")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR055"
 			(at 64.77 39.37 0)
 			(effects
 				(font
@@ -5137,72 +5083,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Vdrive")
-		(at 187.96 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5d17de30-b056-4807-9f15-beb85592a88f")
-		(property "Reference" "#PWR057"
-			(at 187.96 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Vdrive"
-			(at 187.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Vdrive\""
-			(at 187.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "33f56715-7304-4af2-86a3-9feeae4ae91e")
-		)
-		(instances
-			(project ""
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR057")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -5218,7 +5099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f48b50f-4621-4c65-807d-3fbd3da35b43")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR054"
 			(at 48.26 54.61 0)
 			(effects
 				(font
@@ -5268,7 +5149,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR052")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -5284,7 +5165,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63a8c8c5-0a02-4f0c-9b06-b09d31339e2c")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR060"
 			(at 194.31 88.9 0)
 			(effects
 				(font
@@ -5334,7 +5215,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR058")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -5502,7 +5383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86de6382-d45a-41cc-a188-2abd24e6c47b")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR053"
 			(at 31.75 39.37 0)
 			(effects
 				(font
@@ -5552,7 +5433,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR051")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5644,7 +5525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "960f38fe-1a56-4f89-82cb-b35a8ff665f4")
-		(property "Reference" "C27"
+		(property "Reference" "C28"
 			(at 105.41 116.8399 0)
 			(effects
 				(font
@@ -5698,7 +5579,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "C27")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -5714,7 +5595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98d30dc7-a282-489d-bfda-f8285717b378")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR063"
 			(at 224.79 95.25 0)
 			(effects
 				(font
@@ -5764,7 +5645,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR061")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -5780,7 +5661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e791cf7-1a04-4e90-bc5a-d936c3f2d870")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR056"
 			(at 80.01 115.57 0)
 			(effects
 				(font
@@ -5830,7 +5711,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR054")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -5993,7 +5874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aaf3dc05-d1a1-417b-a269-d522d9dec2d3")
-		(property "Reference" "C26"
+		(property "Reference" "C27"
 			(at 68.58 40.6399 0)
 			(effects
 				(font
@@ -6047,7 +5928,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "C26")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -6314,7 +6195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4a9dcfb-9a33-4fb1-ae6a-ac6b0c7d84ea")
-		(property "Reference" "L12"
+		(property "Reference" "L14"
 			(at 198.12 53.3399 0)
 			(effects
 				(font
@@ -6368,7 +6249,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "L12")
+					(reference "L14")
 					(unit 1)
 				)
 			)
@@ -6384,7 +6265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5136147-c2e1-40de-a45b-140b490ee1f0")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR058"
 			(at 101.6 128.27 0)
 			(effects
 				(font
@@ -6434,7 +6315,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "#PWR056")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -6632,7 +6513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f963c2d6-f325-45ee-8b05-0f812fbd8ea3")
-		(property "Reference" "C28"
+		(property "Reference" "C29"
 			(at 213.36 55.8799 0)
 			(effects
 				(font
@@ -6686,7 +6567,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/00cd6d49-1fe6-44fd-aaf9-393787a3c159"
-					(reference "C28")
+					(reference "C29")
 					(unit 1)
 				)
 			)

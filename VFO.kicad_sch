@@ -1044,12 +1044,6 @@
 		(uuid "adf32f0e-8cea-4127-8564-e9f718094d3b")
 	)
 	(junction
-		(at 158.75 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b35f96a7-b7aa-4c0a-b886-b5fee3039509")
-	)
-	(junction
 		(at 95.25 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1084,16 +1078,6 @@
 			(type default)
 		)
 		(uuid "1dd25210-c0f5-4d5f-9d85-e3512cf8dca8")
-	)
-	(wire
-		(pts
-			(xy 158.75 93.98) (xy 162.56 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ddd798c-4096-4f21-8ed0-4d797d8aedb0")
 	)
 	(wire
 		(pts
@@ -1329,18 +1313,6 @@
 		)
 		(uuid "3511235f-9a2f-4f80-bcdc-73c646916db4")
 	)
-	(hierarchical_label "BFO out"
-		(shape output)
-		(at 162.56 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "88df9594-9210-4434-9468-3bf3aa194bcd")
-	)
 	(hierarchical_label "180º Wave Out"
 		(shape output)
 		(at 167.64 85.09 0)
@@ -1375,7 +1347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02f4c41e-cd59-487d-9f39-f2f3505285ba")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR047"
 			(at 137.16 72.39 0)
 			(effects
 				(font
@@ -1425,7 +1397,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR045")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -1507,7 +1479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0643c24c-a9e2-4cab-9617-fa94982cfd29")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR046"
 			(at 95.25 92.71 0)
 			(effects
 				(font
@@ -1557,7 +1529,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR044")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -1640,7 +1612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2efc412a-9f09-4375-91bd-f575ef72306b")
-		(property "Reference" "C21"
+		(property "Reference" "C22"
 			(at 100.33 68.58 90)
 			(effects
 				(font
@@ -1692,7 +1664,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C21")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -1708,7 +1680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31e7c4e8-370d-4f1d-8312-b1da0d018824")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR048"
 			(at 139.7 104.14 0)
 			(effects
 				(font
@@ -1758,7 +1730,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR046")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -1844,7 +1816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56fb8533-37fc-4a1e-ad22-8ec03a1c4720")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR051"
 			(at 209.55 86.36 0)
 			(effects
 				(font
@@ -1894,7 +1866,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR049")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -2004,7 +1976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "956e4553-3159-4654-8024-fb5607d55dc0")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR052"
 			(at 209.55 96.52 0)
 			(effects
 				(font
@@ -2054,7 +2026,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR050")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -2069,7 +2041,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9758853e-04a0-4d2d-91f9-3b842e058855")
-		(property "Reference" "C22"
+		(property "Reference" "C23"
 			(at 100.33 80.264 90)
 			(effects
 				(font
@@ -2121,7 +2093,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C22")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -2137,7 +2109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99dd455b-cf33-4b39-8e8c-c0b60d58b1a1")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR049"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -2187,7 +2159,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR047")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -2270,7 +2242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b06b3f96-3903-446e-9ca1-5c5430f06aef")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 213.36 85.0899 0)
 			(effects
 				(font
@@ -2324,7 +2296,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -2340,7 +2312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbb33b02-ae7f-4718-abdd-d92cdb615d57")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR050"
 			(at 196.85 96.52 0)
 			(effects
 				(font
@@ -2390,7 +2362,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR048")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -2406,7 +2378,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d13f187d-28ab-49aa-bbff-698d2117fbb7")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 200.66 85.0899 0)
 			(effects
 				(font
@@ -2460,7 +2432,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
