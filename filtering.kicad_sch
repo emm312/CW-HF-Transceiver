@@ -1374,12 +1374,6 @@
 		(uuid "21bd699c-57cb-4a08-90a2-f14566ea2bcb")
 	)
 	(junction
-		(at 27.94 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "244fc062-cac9-4e14-816f-1bd2a3b93203")
-	)
-	(junction
 		(at 151.13 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1663,7 +1657,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 92.71) (xy 27.94 92.71)
+			(xy 25.4 92.71) (xy 31.75 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1970,16 +1964,6 @@
 			(type default)
 		)
 		(uuid "7fb062e0-fd2c-46eb-9a10-e05e50cd8274")
-	)
-	(wire
-		(pts
-			(xy 27.94 92.71) (xy 31.75 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83e5b5f2-e1fa-4ec2-a60c-c6754b864137")
 	)
 	(wire
 		(pts
@@ -2488,6 +2472,25 @@
 		)
 		(uuid "5892b99f-5554-401d-be8b-0a46c52fd3b9")
 	)
+	(text_box "Inductors in the filters are FT37-67 Toroids"
+		(exclude_from_sim no)
+		(at 120.396 24.638 0)
+		(size 17.526 10.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7cdc84f1-ed41-4823-a07d-1aeeb2be5e77")
+	)
 	(text_box "20MHz"
 		(exclude_from_sim no)
 		(at 128.016 87.122 0)
@@ -2852,7 +2855,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "079ea82a-738c-4e4f-b977-a50ac76b486c")
-		(property "Reference" "L8"
+		(property "Reference" "L9"
 			(at 152.4 39.3699 0)
 			(effects
 				(font
@@ -2870,7 +2873,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 151.13 40.64 0)
 			(effects
 				(font
@@ -2906,7 +2909,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L8")
+					(reference "L9")
 					(unit 1)
 				)
 			)
@@ -2922,7 +2925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09b0e895-e243-4213-97ab-88d2ea72e84d")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 139.7 142.2399 0)
 			(effects
 				(font
@@ -2940,7 +2943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 136.8552 147.32 0)
 			(effects
 				(font
@@ -2976,7 +2979,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -3008,7 +3011,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 191.77 76.708 90)
 			(effects
 				(font
@@ -3060,7 +3063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c8b798b-989f-436d-bd67-12e509757d55")
-		(property "Reference" "L12"
+		(property "Reference" "L13"
 			(at 158.75 88.9 90)
 			(effects
 				(font
@@ -3076,7 +3079,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "plib:ft37-67"
 			(at 158.75 93.98 0)
 			(effects
 				(font
@@ -3112,7 +3115,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L12")
+					(reference "L13")
 					(unit 1)
 				)
 			)
@@ -3128,7 +3131,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "130a17ec-5e01-4c96-8e31-51262f8d2932")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR045"
 			(at 151.13 153.67 0)
 			(effects
 				(font
@@ -3178,7 +3181,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR039")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -3194,7 +3197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13d58821-3a3b-48e5-9638-a68f61cb3eef")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR035"
 			(at 44.45 132.08 0)
 			(effects
 				(font
@@ -3244,7 +3247,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR029")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -3260,7 +3263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15943095-95df-4bad-b307-8a1a13126677")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR050"
 			(at 177.8 91.44 0)
 			(effects
 				(font
@@ -3310,7 +3313,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR044")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -3342,7 +3345,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 53.34 150.368 90)
 			(effects
 				(font
@@ -3394,7 +3397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b3ca1d6-e2f9-444e-b9bb-2e70ca936101")
-		(property "Reference" "L2"
+		(property "Reference" "L3"
 			(at 43.18 60.9599 0)
 			(effects
 				(font
@@ -3412,7 +3415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 41.91 62.23 0)
 			(effects
 				(font
@@ -3448,7 +3451,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L2")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -3465,7 +3468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f71bfca-48d7-438a-846d-86048d7329b9")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR033"
 			(at 30.48 72.39 0)
 			(effects
 				(font
@@ -3515,7 +3518,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR027")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3532,7 +3535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2312b0ad-4026-44f0-a505-ba975ed635c3")
-		(property "Reference" "D9"
+		(property "Reference" "D8"
 			(at 185.42 46.99 0)
 			(effects
 				(font
@@ -3548,7 +3551,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 185.42 48.895 0)
 			(effects
 				(font
@@ -3602,7 +3605,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D9")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -3618,7 +3621,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "280f9a68-d159-4e2a-a6d6-6f9745774f91")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR049"
 			(at 177.8 50.8 0)
 			(effects
 				(font
@@ -3668,7 +3671,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR043")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3684,7 +3687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aea7341-1e41-47f8-a6c7-083ee43542fa")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR040"
 			(at 135.89 69.85 0)
 			(effects
 				(font
@@ -3734,7 +3737,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR034")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3750,7 +3753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32416a4a-55a3-4d76-8634-e6cb0f33a105")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 62.23 121.9199 0)
 			(effects
 				(font
@@ -3768,7 +3771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 57.4548 119.38 0)
 			(effects
 				(font
@@ -3804,7 +3807,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -3820,7 +3823,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "353fdb1f-6d72-464c-b654-d741042dd63f")
-		(property "Reference" "L5"
+		(property "Reference" "L6"
 			(at 143.51 48.26 90)
 			(effects
 				(font
@@ -3836,7 +3839,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "plib:ft37-67"
 			(at 143.51 53.34 0)
 			(effects
 				(font
@@ -3872,7 +3875,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L5")
+					(reference "L6")
 					(unit 1)
 				)
 			)
@@ -3888,7 +3891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e93eaa1-6d33-445f-a310-491ac205673c")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 139.7 99.0599 0)
 			(effects
 				(font
@@ -3906,7 +3909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 136.8552 104.14 0)
 			(effects
 				(font
@@ -3942,74 +3945,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 27.94 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f6b90ac-df39-426c-a7e9-03fdb4d67935")
-		(property "Reference" "TP1"
-			(at 30.48 88.1379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Filters In"
-			(at 30.48 90.6779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 27.94 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b89ae5ee-fed3-41f0-91ec-65349f9d0def")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "TP1")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -4026,7 +3962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40f8a7de-3b8e-4209-85dc-349c8eb4a576")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 58.42 60.9599 0)
 			(effects
 				(font
@@ -4044,7 +3980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 61.2648 66.04 0)
 			(effects
 				(font
@@ -4080,7 +4016,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4096,7 +4032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e28b660-138b-4f1a-b92b-d60fac642317")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR037"
 			(at 58.42 133.35 0)
 			(effects
 				(font
@@ -4146,7 +4082,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR031")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -4163,7 +4099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "586e784f-c335-4c76-a05d-3183baaf336b")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 26.67 60.9599 0)
 			(effects
 				(font
@@ -4181,7 +4117,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 29.5148 66.04 0)
 			(effects
 				(font
@@ -4217,7 +4153,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4233,7 +4169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59a6c9b7-08a6-488d-b5e4-19d416dbc9ca")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 154.94 142.2399 0)
 			(effects
 				(font
@@ -4251,7 +4187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 152.0952 147.32 0)
 			(effects
 				(font
@@ -4287,7 +4223,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4303,7 +4239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5da32522-1d1c-4ed9-a939-30c24cc76255")
-		(property "Reference" "L10"
+		(property "Reference" "L11"
 			(at 152.4 123.1899 0)
 			(effects
 				(font
@@ -4321,7 +4257,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 151.13 124.46 0)
 			(effects
 				(font
@@ -4357,7 +4293,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L10")
+					(reference "L11")
 					(unit 1)
 				)
 			)
@@ -4449,7 +4385,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61f0582f-dddc-4016-9751-cd6799a3a0e9")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 49.53 109.22 0)
 			(effects
 				(font
@@ -4465,7 +4401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 49.53 115.57 0)
 			(effects
 				(font
@@ -4519,7 +4455,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -4535,7 +4471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64e9f241-f4f3-4cfb-a4d2-d3816491f552")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR048"
 			(at 166.37 153.67 0)
 			(effects
 				(font
@@ -4585,7 +4521,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR042")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4601,7 +4537,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65f8450a-4170-4509-ad4e-f6c2995f3bb0")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR046"
 			(at 166.37 69.85 0)
 			(effects
 				(font
@@ -4651,7 +4587,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR040")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -4667,7 +4603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "682fdb70-e9ed-449b-886d-8668cb345976")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR047"
 			(at 166.37 110.49 0)
 			(effects
 				(font
@@ -4717,7 +4653,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR041")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -4749,7 +4685,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 191.77 36.068 90)
 			(effects
 				(font
@@ -4801,7 +4737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d3e8a09-746f-4486-a1cc-196096260c2d")
-		(property "Reference" "L4"
+		(property "Reference" "L5"
 			(at 74.93 60.9599 0)
 			(effects
 				(font
@@ -4819,7 +4755,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 73.66 62.23 0)
 			(effects
 				(font
@@ -4855,7 +4791,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L4")
+					(reference "L5")
 					(unit 1)
 				)
 			)
@@ -4871,7 +4807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74f72ed4-46b0-416a-8aac-674380489bd1")
-		(property "Reference" "L13"
+		(property "Reference" "L14"
 			(at 158.75 132.08 90)
 			(effects
 				(font
@@ -4887,7 +4823,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "plib:ft37-67"
 			(at 158.75 137.16 0)
 			(effects
 				(font
@@ -4923,7 +4859,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L13")
+					(reference "L14")
 					(unit 1)
 				)
 			)
@@ -4955,7 +4891,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 191.77 119.888 90)
 			(effects
 				(font
@@ -5007,7 +4943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7962e209-db06-4b94-bffc-f4645ac5509c")
-		(property "Reference" "D7"
+		(property "Reference" "D6"
 			(at 118.11 87.63 0)
 			(effects
 				(font
@@ -5023,7 +4959,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 118.11 89.535 0)
 			(effects
 				(font
@@ -5077,7 +5013,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D7")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5093,7 +5029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "914238de-522d-4e08-8a7d-9ca1abd55a4d")
-		(property "Reference" "D6"
+		(property "Reference" "D5"
 			(at 118.11 46.99 0)
 			(effects
 				(font
@@ -5109,7 +5045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 118.11 48.895 0)
 			(effects
 				(font
@@ -5163,7 +5099,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D6")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -5179,7 +5115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92677110-1128-4a0e-ac63-600877d84ca2")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR036"
 			(at 58.42 106.68 0)
 			(effects
 				(font
@@ -5229,7 +5165,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR030")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5246,7 +5182,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93e9a59e-2b9e-45ca-bd0d-5bff02d8302d")
-		(property "Reference" "D10"
+		(property "Reference" "D9"
 			(at 185.42 87.63 0)
 			(effects
 				(font
@@ -5262,7 +5198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 185.42 89.535 0)
 			(effects
 				(font
@@ -5316,7 +5252,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D10")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -5332,7 +5268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9590a303-6fc2-4a94-a1bf-3c8e51b3faca")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 170.18 58.4199 0)
 			(effects
 				(font
@@ -5350,7 +5286,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.3352 63.5 0)
 			(effects
 				(font
@@ -5386,7 +5322,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -5402,7 +5338,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4ad0290-65e2-4928-bf01-df7b6b05ed5f")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR034"
 			(at 41.91 57.15 0)
 			(effects
 				(font
@@ -5452,7 +5388,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR028")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -5468,7 +5404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a76e7ce7-4f54-48af-9975-f14a987ec126")
-		(property "Reference" "D5"
+		(property "Reference" "D4"
 			(at 60.96 105.4099 90)
 			(effects
 				(font
@@ -5486,7 +5422,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 58.42 106.68 0)
 			(effects
 				(font
@@ -5540,7 +5476,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D5")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5556,7 +5492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7eff248-3ecf-4b7f-8517-30c3bff8c934")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 154.94 99.0599 0)
 			(effects
 				(font
@@ -5574,7 +5510,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 152.0952 104.14 0)
 			(effects
 				(font
@@ -5610,7 +5546,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -5626,7 +5562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aafe5f53-2516-49f8-bd79-e304b0beff65")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR043"
 			(at 151.13 69.85 0)
 			(effects
 				(font
@@ -5676,7 +5612,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR037")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5693,7 +5629,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afb2a867-598f-4c13-9ad4-036de8b205be")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR038"
 			(at 62.23 72.39 0)
 			(effects
 				(font
@@ -5743,7 +5679,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR032")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5759,7 +5695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3abcd14-e393-4114-bc54-f0b76d3bf505")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR039"
 			(at 73.66 57.15 0)
 			(effects
 				(font
@@ -5809,7 +5745,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR033")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -5825,7 +5761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfd96a21-7a23-4174-9399-ecbd8b800289")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 231.14 89.4079 0)
 			(effects
 				(font
@@ -5843,7 +5779,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 233.68 93.98 0)
 			(effects
 				(font
@@ -5876,7 +5812,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -5968,7 +5904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c722d884-4de4-4ea7-8c30-e5d9d2224f9a")
-		(property "Reference" "C21"
+		(property "Reference" "C22"
 			(at 170.18 142.2399 0)
 			(effects
 				(font
@@ -5986,7 +5922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.3352 147.32 0)
 			(effects
 				(font
@@ -6022,7 +5958,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C21")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -6038,7 +5974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8df978a-5984-4fe6-9100-7d0995dbd78a")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR041"
 			(at 135.89 110.49 0)
 			(effects
 				(font
@@ -6088,7 +6024,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR035")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6104,7 +6040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd127810-cc87-4e85-818f-43e263468160")
-		(property "Reference" "D8"
+		(property "Reference" "D7"
 			(at 118.11 130.81 0)
 			(effects
 				(font
@@ -6120,7 +6056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 118.11 132.715 0)
 			(effects
 				(font
@@ -6174,7 +6110,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D8")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6190,7 +6126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d018cb2a-c3c3-4455-b9ae-0defc7e8b15c")
-		(property "Reference" "L3"
+		(property "Reference" "L4"
 			(at 62.23 143.51 90)
 			(effects
 				(font
@@ -6206,7 +6142,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 62.23 148.59 0)
 			(effects
 				(font
@@ -6242,7 +6178,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L3")
+					(reference "L4")
 					(unit 1)
 				)
 			)
@@ -6258,7 +6194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d02560b7-94bc-431d-9f14-cd593cb9d697")
-		(property "Reference" "L11"
+		(property "Reference" "L12"
 			(at 158.75 48.26 90)
 			(effects
 				(font
@@ -6274,7 +6210,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "plib:ft37-67"
 			(at 158.75 53.34 0)
 			(effects
 				(font
@@ -6310,7 +6246,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L11")
+					(reference "L12")
 					(unit 1)
 				)
 			)
@@ -6326,7 +6262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d064597c-c9e5-4a0a-b10e-e96716368adf")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 154.94 58.4199 0)
 			(effects
 				(font
@@ -6344,7 +6280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 152.0952 63.5 0)
 			(effects
 				(font
@@ -6380,7 +6316,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -6396,7 +6332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d177f777-4787-4eaf-b7e8-908fc6410268")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 39.37 107.95 90)
 			(effects
 				(font
@@ -6412,7 +6348,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 43.18 114.6048 0)
 			(effects
 				(font
@@ -6448,7 +6384,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -6464,7 +6400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1810c13-0eee-4147-8478-f6ae13b1574f")
-		(property "Reference" "L7"
+		(property "Reference" "L8"
 			(at 143.51 132.08 90)
 			(effects
 				(font
@@ -6480,7 +6416,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "plib:ft37-67"
 			(at 143.51 137.16 0)
 			(effects
 				(font
@@ -6516,7 +6452,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L7")
+					(reference "L8")
 					(unit 1)
 				)
 			)
@@ -6532,7 +6468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d36d596d-8e08-4034-9cbb-601267fc0129")
-		(property "Reference" "L9"
+		(property "Reference" "L10"
 			(at 152.4 80.0099 0)
 			(effects
 				(font
@@ -6550,7 +6486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 151.13 81.28 0)
 			(effects
 				(font
@@ -6586,7 +6522,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L9")
+					(reference "L10")
 					(unit 1)
 				)
 			)
@@ -6602,7 +6538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d87f4f89-da0c-43b4-bca8-ae0b12c79278")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR042"
 			(at 135.89 153.67 0)
 			(effects
 				(font
@@ -6652,7 +6588,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR036")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -6744,7 +6680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da9802f7-2ce0-439e-a638-a88223275efb")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 46.99 120.6499 90)
 			(effects
 				(font
@@ -6762,7 +6698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 44.45 121.92 0)
 			(effects
 				(font
@@ -6816,7 +6752,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -6832,7 +6768,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e01d7981-4a51-4182-9556-1186a2fd27c0")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 139.7 58.4199 0)
 			(effects
 				(font
@@ -6850,7 +6786,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 136.8552 63.5 0)
 			(effects
 				(font
@@ -6886,7 +6822,7 @@
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -6903,7 +6839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2275237-820d-4da1-8cb2-12139fd7c85d")
-		(property "Reference" "D11"
+		(property "Reference" "D10"
 			(at 185.42 130.81 0)
 			(effects
 				(font
@@ -6919,7 +6855,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 185.42 132.715 0)
 			(effects
 				(font
@@ -6973,7 +6909,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "D11")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -6989,7 +6925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e68e5973-b315-45fe-9837-c8827cbd4532")
-		(property "Reference" "L6"
+		(property "Reference" "L7"
 			(at 143.51 88.9 90)
 			(effects
 				(font
@@ -7005,7 +6941,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "plib:ft37-67"
 			(at 143.51 93.98 0)
 			(effects
 				(font
@@ -7041,7 +6977,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "L6")
+					(reference "L7")
 					(unit 1)
 				)
 			)
@@ -7057,7 +6993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8e1f047-12c8-4db2-b11e-ecc1f66ce8fb")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR051"
 			(at 177.8 134.62 0)
 			(effects
 				(font
@@ -7107,7 +7043,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR045")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -7123,7 +7059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9d3fa69-2400-4c89-bf8c-9cecdb231c9c")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR044"
 			(at 151.13 110.49 0)
 			(effects
 				(font
@@ -7173,7 +7109,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "#PWR038")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -7189,7 +7125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc376aae-1257-4fb2-9d24-4f1eab6104eb")
-		(property "Reference" "C20"
+		(property "Reference" "C21"
 			(at 170.18 99.0599 0)
 			(effects
 				(font
@@ -7207,7 +7143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.3352 104.14 0)
 			(effects
 				(font
@@ -7243,7 +7179,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/9635564c-4042-482f-8413-a396e124990d"
-					(reference "C20")
+					(reference "C21")
 					(unit 1)
 				)
 			)

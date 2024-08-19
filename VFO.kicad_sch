@@ -247,27 +247,28 @@
 				)
 			)
 		)
-		(symbol "Device:Crystal"
-			(pin_numbers hide)
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 0 3.81 0)
+				(at 3.175 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal"
-				(at 0 -3.81 0)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -288,7 +289,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Two pin crystal"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -315,7 +316,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(rectangle
 					(start -1.143 2.54)
 					(end 1.143 -2.54)
@@ -329,7 +330,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.905 0)
+						(xy -2.54 0) (xy -2.032 0)
 					)
 					(stroke
 						(width 0)
@@ -341,7 +342,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -1.27) (xy -1.905 1.27)
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -353,7 +354,31 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 -1.27) (xy 1.905 1.27)
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -365,7 +390,31 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 1.905 0)
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
 					)
 					(stroke
 						(width 0)
@@ -376,7 +425,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -396,7 +445,7 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 5.08 270)
 					(length 1.27)
 					(name "2"
 						(effects
@@ -406,6 +455,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -892,132 +977,12 @@
 				)
 			)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
-		(at 120.65 83.82)
+		(at 114.3 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "228929ea-ff1a-4443-b7c2-4726c76f4050")
+		(uuid "55b4b095-397b-4744-b3b8-b3aa382c6ee5")
 	)
 	(junction
 		(at 166.37 85.09)
@@ -1032,22 +997,16 @@
 		(uuid "7b4414b8-eb19-47b0-83f6-ccaea01e7492")
 	)
 	(junction
-		(at 120.65 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "840497c1-a573-4ea5-9356-8a0802d994d0")
-	)
-	(junction
 		(at 153.67 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "adf32f0e-8cea-4127-8564-e9f718094d3b")
 	)
 	(junction
-		(at 95.25 83.82)
+		(at 158.75 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bb9526d9-ca11-4c57-aa61-aeb1bbaf2837")
+		(uuid "e2106df5-8f70-471b-9490-e99f4827887d")
 	)
 	(wire
 		(pts
@@ -1061,26 +1020,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 83.82) (xy 120.65 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cc61a1a-e0df-482f-bf91-f6bf915bf677")
-	)
-	(wire
-		(pts
-			(xy 95.25 76.2) (xy 96.52 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dd25210-c0f5-4d5f-9d85-e3512cf8dca8")
-	)
-	(wire
-		(pts
 			(xy 137.16 69.85) (xy 137.16 72.39)
 		)
 		(stroke
@@ -1088,6 +1027,16 @@
 			(type default)
 		)
 		(uuid "306c98f8-121c-4399-b672-986d810ac5fc")
+	)
+	(wire
+		(pts
+			(xy 109.22 87.63) (xy 109.22 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31c4fa91-9423-45af-83e4-92040b0e95a3")
 	)
 	(wire
 		(pts
@@ -1101,6 +1050,36 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 83.82) (xy 124.46 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6f260c-7a18-4744-9207-394926f6d3af")
+	)
+	(wire
+		(pts
+			(xy 114.3 87.63) (xy 109.22 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fd0dd1b-9931-4a58-abcd-84ea832ca84e")
+	)
+	(wire
+		(pts
+			(xy 119.38 80.01) (xy 119.38 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41798b11-6718-45ab-b909-f71c97947620")
+	)
+	(wire
+		(pts
 			(xy 124.46 77.47) (xy 127 77.47)
 		)
 		(stroke
@@ -1108,16 +1087,6 @@
 			(type default)
 		)
 		(uuid "5b1c8c84-2e38-4b1b-a131-8dd2898c8b93")
-	)
-	(wire
-		(pts
-			(xy 120.65 83.82) (xy 124.46 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e570fe4-b909-4bcf-96ed-64ac350ffb2c")
 	)
 	(wire
 		(pts
@@ -1131,23 +1100,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 76.2) (xy 120.65 76.2)
+			(xy 114.3 76.2) (xy 124.46 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71e50fc6-d23b-43be-aa6c-5c18d7466df0")
+		(uuid "762b9a8e-6929-4adc-a47d-baa73ebb7f69")
 	)
 	(wire
 		(pts
-			(xy 95.25 83.82) (xy 96.52 83.82)
+			(xy 158.75 90.17) (xy 176.53 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8387b9c4-0bce-4dd8-a92e-2aa870e0bf2e")
+		(uuid "77dd5486-a351-4cab-8f23-b996b4c9c88d")
 	)
 	(wire
 		(pts
@@ -1211,16 +1180,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 83.82) (xy 95.25 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a662ed06-fffa-4a63-bde0-aa65a48b3814")
-	)
-	(wire
-		(pts
 			(xy 137.16 69.85) (xy 137.16 68.58)
 		)
 		(stroke
@@ -1231,13 +1190,13 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 86.36) (xy 95.25 83.82)
+			(xy 119.38 87.63) (xy 114.3 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b2ba38e5-9eb3-45e6-9a79-f4f90a61e5d4")
+		(uuid "aeb2e5ba-d290-44cc-b779-83970549ca90")
 	)
 	(wire
 		(pts
@@ -1248,16 +1207,6 @@
 			(type default)
 		)
 		(uuid "bad3cd9d-63a2-4b19-a772-3bdcbed18a73")
-	)
-	(wire
-		(pts
-			(xy 120.65 76.2) (xy 124.46 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2a688c7-bba4-473b-89e7-9bdc6d6248fe")
 	)
 	(wire
 		(pts
@@ -1325,6 +1274,18 @@
 		)
 		(uuid "8b2cae89-8833-4609-bb3c-be6c43c950da")
 	)
+	(hierarchical_label "Receiver clk"
+		(shape output)
+		(at 176.53 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af176e58-9965-43ee-beff-799be1735db2")
+	)
 	(hierarchical_label "Wave out"
 		(shape output)
 		(at 154.94 80.01 0)
@@ -1347,7 +1308,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02f4c41e-cd59-487d-9f39-f2f3505285ba")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR053"
 			(at 137.16 72.39 0)
 			(effects
 				(font
@@ -1397,7 +1358,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR047")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -1412,7 +1373,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03143c6b-5d76-4606-ab16-d91fc4cdd1cf")
-		(property "Reference" "TP5"
+		(property "Reference" "TP4"
 			(at 168.91 87.1219 0)
 			(effects
 				(font
@@ -1430,7 +1391,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 161.29 85.09 0)
 			(effects
 				(font
@@ -1463,7 +1424,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "TP5")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -1471,16 +1432,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 86.36 0)
+		(at 114.3 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0643c24c-a9e2-4cab-9617-fa94982cfd29")
-		(property "Reference" "#PWR046"
-			(at 95.25 92.71 0)
+		(uuid "084da64f-1652-4768-a917-8ab0eebcea01")
+		(property "Reference" "#PWR052"
+			(at 114.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1489,7 +1450,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 91.44 0)
+			(at 114.3 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1497,7 +1458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 86.36 0)
+			(at 114.3 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1506,7 +1467,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 86.36 0)
+			(at 114.3 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1515,7 +1476,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 86.36 0)
+			(at 114.3 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1524,12 +1485,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "855db3b9-3a21-4f86-818d-da39af104861")
+			(uuid "2745a0eb-3d57-4412-b5b4-5e579dc75818")
 		)
 		(instances
 			(project ""
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR046")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -1545,7 +1506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26f6e9b3-c791-4b36-a6df-488866458d81")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 156.21 75.4379 0)
 			(effects
 				(font
@@ -1563,7 +1524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 158.75 80.01 0)
 			(effects
 				(font
@@ -1596,75 +1557,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 100.33 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2efc412a-9f09-4375-91bd-f575ef72306b")
-		(property "Reference" "C22"
-			(at 100.33 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10p"
-			(at 100.33 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 75.2348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 100.33 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dbebd626-dea3-41c0-886c-45fe79cf2421")
-		)
-		(pin "2"
-			(uuid "ac918685-c859-410e-aeb4-4a4319af153c")
-		)
-		(instances
-			(project ""
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C22")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -1680,7 +1573,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31e7c4e8-370d-4f1d-8312-b1da0d018824")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR054"
 			(at 139.7 104.14 0)
 			(effects
 				(font
@@ -1730,143 +1623,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal")
-		(at 120.65 80.01 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4c5583cc-604a-4233-a364-d039391d4ea3")
-		(property "Reference" "Y1"
-			(at 116.84 78.7399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "25MHz"
-			(at 116.84 81.2799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 120.65 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fba4c1e9-8ea6-4c30-b2a3-d7115e39ab7b")
-		)
-		(pin "1"
-			(uuid "e43ea29b-bbd1-4433-8026-409ca43a2a07")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 209.55 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56fb8533-37fc-4a1e-ad22-8ec03a1c4720")
-		(property "Reference" "#PWR051"
-			(at 209.55 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 209.55 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 209.55 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8faab05-22f4-4980-ba54-a4f81b46cfeb")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR051")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -1976,7 +1733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "956e4553-3159-4654-8024-fb5607d55dc0")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR058"
 			(at 209.55 96.52 0)
 			(effects
 				(font
@@ -2026,74 +1783,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 100.33 83.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9758853e-04a0-4d2d-91f9-3b842e058855")
-		(property "Reference" "C23"
-			(at 100.33 80.264 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10p"
-			(at 100.33 87.122 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 82.8548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 100.33 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12aa6de5-c694-4e8c-abba-0e49906a53d0")
-		)
-		(pin "2"
-			(uuid "f1040e0c-0f69-463a-9c60-5599ef10a774")
-		)
-		(instances
-			(project "CW HF Transceiver"
-				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C23")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -2109,7 +1799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99dd455b-cf33-4b39-8e8c-c0b60d58b1a1")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR055"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -2159,7 +1849,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR049")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -2175,7 +1865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acbeb72f-ab1e-4d25-9925-6b0afcafa46f")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 161.29 96.0119 0)
 			(effects
 				(font
@@ -2193,7 +1883,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 153.67 93.98 0)
 			(effects
 				(font
@@ -2226,7 +1916,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "TP4")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2242,7 +1932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b06b3f96-3903-446e-9ca1-5c5430f06aef")
-		(property "Reference" "C25"
+		(property "Reference" "C24"
 			(at 213.36 85.0899 0)
 			(effects
 				(font
@@ -2296,7 +1986,81 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C25")
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 114.3 80.01 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "baeccc3a-e5fe-4056-9905-76431a6b94ee")
+		(property "Reference" "Y1"
+			(at 106.426 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NX3225GA-25.000M-STD-CRG-2"
+			(at 91.186 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb488349-342f-4239-9059-c37b87adfcf8")
+		)
+		(pin "3"
+			(uuid "d259bac7-b6ce-4673-8556-5cc294e168aa")
+		)
+		(pin "1"
+			(uuid "e7385329-3c8e-4c8c-8ccf-b04e97660cae")
+		)
+		(pin "4"
+			(uuid "ac0eedcc-992e-4a86-9430-a4d93fe9a60f")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -2312,7 +2076,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbb33b02-ae7f-4718-abdd-d92cdb615d57")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR056"
 			(at 196.85 96.52 0)
 			(effects
 				(font
@@ -2362,7 +2126,7 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "#PWR050")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -2378,7 +2142,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d13f187d-28ab-49aa-bbff-698d2117fbb7")
-		(property "Reference" "C24"
+		(property "Reference" "C23"
 			(at 200.66 85.0899 0)
 			(effects
 				(font
@@ -2432,7 +2196,73 @@
 		(instances
 			(project "CW HF Transceiver"
 				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
-					(reference "C24")
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 209.55 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdf0f2d6-323a-4f5e-88ed-7a0e8ac299ee")
+		(property "Reference" "#PWR057"
+			(at 209.55 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 209.55 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 209.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94b96d24-4ace-4b80-90c9-bea0a22a14d9")
+		)
+		(instances
+			(project ""
+				(path "/46807950-96a2-445b-a4f1-43cb63a530a8/7a390537-499b-4027-b8ee-d9509676514b"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
