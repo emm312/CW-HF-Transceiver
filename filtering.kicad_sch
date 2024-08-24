@@ -2434,7 +2434,7 @@
 		)
 		(uuid "0a63a621-8bcf-414e-9e7f-e99d675706e0")
 	)
-	(text_box "35MHz"
+	(text_box "F_{c}=35MHz"
 		(exclude_from_sim no)
 		(at 128.016 45.72 0)
 		(size 47.498 24.384)
@@ -2491,7 +2491,7 @@
 		)
 		(uuid "7cdc84f1-ed41-4823-a07d-1aeeb2be5e77")
 	)
-	(text_box "20MHz"
+	(text_box "F_{c}=20MHz"
 		(exclude_from_sim no)
 		(at 128.016 87.122 0)
 		(size 47.498 24.384)
